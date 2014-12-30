@@ -16,23 +16,27 @@ public class XmlLoader : MonoBehaviour {
 
     void Awake()
     {
+        
         if (instance == null)
         {
             instance = this;
         }
         else Debug.Log("XML LOADER JUŻ ISTNIEJE!");
-
+        ReadFromXML();
     }
 
     void Start(){
-        ReadFromXML();
+        
     }
     //pobiera karty z bazy, zwraca je i usuwa własne referencje z tablicy do nich
     //wciąż jest możliwe odwołanie do kart, bo są dziecmi loadera
     public List<GameObject> GetWarCards()
     {
-        List<GameObject> tmp = allWarCards.GetRange(0,5);//+GameManager.instance.roundNumber);
-        allWarCards.RemoveRange(0, 5 );//+ GameManager.instance.roundNumber);
+        List<GameObject> tmp=new List<GameObject>();
+        int x = 5; 
+        if(x<allWarCards.Count)
+        tmp = allWarCards.GetRange(0,x);//+GameManager.instance.roundNumber);
+        allWarCards.RemoveRange(0, x );//+ GameManager.instance.roundNumber);
 
         return tmp;
     }
