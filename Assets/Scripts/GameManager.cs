@@ -16,12 +16,13 @@ public class GameManager : MonoBehaviour {
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
 	public List<Player> players; //lista graczy
-	public int currPlayerID = 0; //ID aktywnego gracz
+	public List<Transform> playerBars;
+	public Transform playerMarker; //znacznik pokazujący, który gracz aktualnie wykonuje ruch
+	public int currPlayerID = 0; //ID aktywnego gracza
 	public int turn;
 	public Text phaseText;
-	public Button nextTurnButton;
+	//public Button nextTurnButton;
     public int roundNumber;
-	public Image playerMarker; //znacznik pokazujący, który gracz aktualnie wykonuje ruch
 
     public List<CardWar> allWarCards { get; set; }
     public List<CardWar> allStrategyCards { get; set; }
@@ -36,34 +37,33 @@ public class GameManager : MonoBehaviour {
         if (instance == null) instance = this;
         else Debug.Log("GameManager już istnieje!!!");
 
-		nextTurnButton.gameObject.SetActive (false);
+		//nextTurnButton.gameObject.SetActive (false);
     }
 
 	// Use this for initialization
 	void Start () 
 	{
         roundNumber = 0;
-		//playerMarker.color = players[currPlayerID].playerColor;
+
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		//if(Input.GetKeyDown (KeyCode.Space))
-		   //NextPlayer ();
+
 	}
 
 	public void NextPlayer () //Przekazanie tury następnemu graczowi
 	{
 		currPlayerID++;
 		currPlayerID %= players.Count;
-		//playerMarker.color = players[currPlayerID].playerColor;
+		playerMarker.position = playerBars [currPlayerID].position;
 		Debug.Log ("current player:" + currPlayerID);
 
 		if(gamePhase == Phase.SETUP && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
-			nextTurnButton.gameObject.SetActive (true);
+			//nextTurnButton.gameObject.SetActive (true);
 		}
 
 		else if(gamePhase == Phase.REINFORCE && currPlayerID == 0)
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour {
 
 		if(gamePhase != Phase.SETUP)
 		{
-			phaseText.text = "TURN "+turn+": "+gamePhase.ToString ();
+			phaseText.text = gamePhase.ToString ();
 			//players[currPlayerID].CreateFogOfWar ();
 		}
 	}
