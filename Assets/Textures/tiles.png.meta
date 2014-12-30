@@ -1,0 +1,443 @@
+fileFormatVersion: 2
+guid: 4f9adf13eda71e34fb7b521c81a6e63b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: map_0
+    21300002: map_1
+    21300004: map_2
+    21300006: map_3
+    21300008: map_4
+    21300010: map_5
+    21300012: map_6
+    21300014: map_7
+    21300016: map_8
+    21300018: map_9
+    21300020: map_10
+    21300022: map_11
+    21300024: map_12
+    21300026: map_13
+    21300028: map_14
+    21300030: map_15
+    21300032: map_16
+    21300034: map_17
+    21300036: map_18
+    21300038: map_19
+    21300040: map_20
+    21300042: map_21
+    21300044: map_22
+    21300046: map_23
+    21300048: map_24
+    21300050: map_25
+    21300052: map_26
+    21300054: map_27
+    21300056: map_28
+    21300058: map_29
+    21300060: map_30
+    21300062: map_31
+    21300064: map_32
+    21300066: map_33
+    21300068: map_34
+    21300070: map_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: map_0
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 680
+        width: 131
+        height: 351
+      alignment: 9
+      pivot: {x: .629672348, y: .602997065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 809
+        width: 365
+        height: 222
+      alignment: 9
+      pivot: {x: .5, y: .241014913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 680
+        width: 365
+        height: 129
+      alignment: 9
+      pivot: {x: .458233386, y: .476364732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 560
+        width: 293
+        height: 120
+      alignment: 9
+      pivot: {x: .682848394, y: .445554614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_4
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 560
+        width: 203
+        height: 120
+      alignment: 9
+      pivot: {x: .44635883, y: .383849591}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 430
+        width: 496
+        height: 130
+      alignment: 9
+      pivot: {x: .600109875, y: .51675272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2
+        width: 315
+        height: 429
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 239
+        width: 259
+        height: 191
+      alignment: 9
+      pivot: {x: .646808863, y: .383248866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_8
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1
+        width: 259
+        height: 237
+      alignment: 9
+      pivot: {x: .52486819, y: .506039262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 753
+        width: 256
+        height: 278
+      alignment: 9
+      pivot: {x: .624404192, y: .411477059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 431
+        width: 156
+        height: 323
+      alignment: 9
+      pivot: {x: .477437735, y: .598073125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_11
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1
+        width: 228
+        height: 429
+      alignment: 9
+      pivot: {x: .541166604, y: .565636098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_12
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 658
+        width: 148
+        height: 95
+      alignment: 9
+      pivot: {x: .702147186, y: .401200145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_13
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 548
+        width: 148
+        height: 110
+      alignment: 9
+      pivot: {x: .557488084, y: .389929205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_14
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 430
+        width: 278
+        height: 118
+      alignment: 9
+      pivot: {x: .530605197, y: .430670023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_15
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 753
+        width: 174
+        height: 278
+      alignment: 9
+      pivot: {x: .691868246, y: .178720385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_16
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 646
+        width: 126
+        height: 107
+      alignment: 9
+      pivot: {x: .524087548, y: .398698181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_17
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 548
+        width: 165
+        height: 98
+      alignment: 9
+      pivot: {x: .539416134, y: .438061148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_18
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 311
+        width: 263
+        height: 119
+      alignment: 9
+      pivot: {x: .494965404, y: .447977185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_19
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1
+        width: 263
+        height: 310
+      alignment: 9
+      pivot: {x: .475670397, y: .673066258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_20
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 430
+        width: 170
+        height: 118
+      alignment: 9
+      pivot: {x: .513177156, y: .392422438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_21
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 646
+        width: 116
+        height: 256
+      alignment: 9
+      pivot: {x: .487125784, y: .332280874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_22
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 902
+        width: 491
+        height: 129
+      alignment: 9
+      pivot: {x: .304257393, y: .389734536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_23
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 750
+        width: 375
+        height: 152
+      alignment: 9
+      pivot: {x: .630196631, y: .469649464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_24
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 646
+        width: 165
+        height: 104
+      alignment: 9
+      pivot: {x: .524890482, y: .403070897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_25
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 548
+        width: 191
+        height: 98
+      alignment: 9
+      pivot: {x: .546913981, y: .381896973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_26
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 429
+        width: 195
+        height: 118
+      alignment: 9
+      pivot: {x: .411925942, y: .36394617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_27
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1
+        width: 230
+        height: 429
+      alignment: 9
+      pivot: {x: .470780611, y: .781762898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_28
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 548
+        width: 186
+        height: 98
+      alignment: 9
+      pivot: {x: .531100392, y: .402477652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_29
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 646
+        width: 135
+        height: 104
+      alignment: 9
+      pivot: {x: .579982281, y: .389255226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_30
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 548
+        width: 118
+        height: 202
+      alignment: 9
+      pivot: {x: .416812181, y: .449090928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_31
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 300
+        width: 194
+        height: 248
+      alignment: 9
+      pivot: {x: .419488966, y: .418358713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_32
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1
+        width: 426
+        height: 299
+      alignment: 9
+      pivot: {x: .467409223, y: .614149511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_33
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 750
+        width: 304
+        height: 281
+      alignment: 9
+      pivot: {x: .443267435, y: .404253662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_34
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 548
+        width: 261
+        height: 202
+      alignment: 9
+      pivot: {x: .310656786, y: .457819879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: map_35
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 300
+        width: 232
+        height: 248
+      alignment: 9
+      pivot: {x: .506594419, y: .292321593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
