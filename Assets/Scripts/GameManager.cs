@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour {
 
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
-	public List<Player> players;
-	public int currPlayerID = 0;
+	public List<Player> players; //lista graczy
+	public int currPlayerID = 0; //ID aktywnego gracz
 	public int turn;
 	public Text phaseText;
 	public Button nextTurnButton;
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
 	void Start () 
 	{
         roundNumber = 0;
-		playerMarker.color = players[currPlayerID].playerColor;
+		//playerMarker.color = players[currPlayerID].playerColor;
 	}
 	
 	// Update is called once per frame
@@ -53,11 +53,11 @@ public class GameManager : MonoBehaviour {
 		   //NextPlayer ();
 	}
 
-	public void NextPlayer ()
+	public void NextPlayer () //Przekazanie tury następnemu graczowi
 	{
 		currPlayerID++;
 		currPlayerID %= players.Count;
-		playerMarker.color = players[currPlayerID].playerColor;
+		//playerMarker.color = players[currPlayerID].playerColor;
 		Debug.Log ("current player:" + currPlayerID);
 
 		if(gamePhase == Phase.SETUP && currPlayerID == 0)
