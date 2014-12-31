@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{170CC2F9-8674-D8AE-1462-75644A61FF42}") = "This Is War - Unity Project", "Assembly-CSharp-vs.csproj", "{A14FF6AC-830A-7168-48D4-977E8B5BC0CF}"
+Project("{170CC2F9-8674-D8AE-1462-75644A61FF42}") = "This Is War - Unity Project", "Assembly-CSharp.csproj", "{A14FF6AC-830A-7168-48D4-977E8B5BC0CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																										GlobalSection(MonoDevelopProperties) = preSolution
+																																																				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

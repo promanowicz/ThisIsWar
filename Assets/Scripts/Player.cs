@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 
 	public void CreateArmyCounter (Tile tile)
 	{
-		GameObject counter = (GameObject)Instantiate (counterPrefab);
+		GameObject counter = (GameObject)Network.Instantiate (counterPrefab, tile.transform.position, Quaternion.Euler(90,0,0), 0);
 		counter.transform.position = tile.transform.position;
 		counter.transform.parent = transform;
 		counter.renderer.material.color = playerColor;

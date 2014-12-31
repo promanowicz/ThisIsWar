@@ -42,13 +42,14 @@ public class Tile : MonoBehaviour {
 
 	void OnMouseDown ()
 	{
-		if(!owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
+		if(gameManager.IfPlayerTurn()&&!owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
 		{
 			owner = gameManager.players[gameManager.currPlayerID];
 			tileColor = owner.playerColor;
 			tileColor = new Color(tileColor.r, tileColor.g, tileColor.b, 0.25f);
 			GetComponent<SpriteRenderer>().color = tileColor;
 			owner.CreateArmyCounter (this);
+			networkView.RPC("UpdateTile", RPCMode.Others);
 			gameManager.NextPlayer ();
 		}
 	}
@@ -81,4 +82,13 @@ public class Tile : MonoBehaviour {
 		}
 		return true;
 	}
+
+    [RPC]  void UpdateTile()
+	{
+				owner = gameManager.players [gameManager.currPlayerID];
+				tileColor = owner.playerColor;
+				tileColor = new Color (tileColor.r, tileColor.g, tileColor.b, 0.25f);
+				gameManager.NextPlayer ();
+	}
+		
 }

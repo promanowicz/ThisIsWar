@@ -13,8 +13,6 @@ public enum Phase
 
 public class GameManager : MonoBehaviour {
 
-	public NetworkManager netManager;
-
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
 	public List<Player> players;
@@ -82,10 +80,5 @@ public class GameManager : MonoBehaviour {
 			phaseText.text = "TURN "+turn+": "+gamePhase.ToString ();
 			//players[currPlayerID].CreateFogOfWar ();
 		}
-	}
-
-	public bool IfPlayerTurn()
-	{
-			return currPlayerID == netManager.GetPlayerID();
 	}
 }
