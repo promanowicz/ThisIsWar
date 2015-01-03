@@ -10,7 +10,8 @@ public class Tile : MonoBehaviour {
 	public Player owner;
 	public Color tileColor;
 	public bool production;
-	public bool isHidden;
+    public bool isHidden;
+    public string tileName;
 
     public CardType restriction;
     public List<Army> armiesInRegion;

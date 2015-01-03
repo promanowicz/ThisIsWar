@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 //wynik walki ukazany z perspektywy atakującego
 // jeśl gracz atakujacy przegrał to wygrał obrońca
@@ -16,33 +17,74 @@ public enum FightResult
 //Usuwanie karty z początku powoduje konieczność przesunięcia całej kolejki
 //http://stackoverflow.com/questions/18142872/how-to-remove-an-object-from-listt-in-c-sharp-and-return-the-removed-object
 
-public static class FightComparator
+public class FightComparator : MonoBehaviour
 {
+    public GameObject _attacker;
+    public GameObject attackedRegion;
+    public Army army1;
+    public Army army2;
 
-    //mozna uzyc innej klasy jako wynik walki 
-    //w celu uzyskania informacji o konkretnym przebiegu walki
 
-    //wynik metody ukazany z perspektywy atakującego
-    public static FightResult CompareArmies(GameObject _attacker, GameObject attackedRegion)
+    public Transform[] playerAarmies;
+    public Transform[] playerBarmies;
+    GameObject[] armiesTmp = new GameObject[6];
+    public Transform playerAcardPos;
+    public Transform playerBcardPos;
+    public Transform playerAsupportPos;
+    public Transform playerBsupprtPos;
+    public Text regionText;
+    public Text attDefText;
+    public Text battleStage;
+
+    //w tych dwóch zmiennych przechowywane będą karty odłożone gdy nie mogły ze sobą walczyć
+    List<CardWar> attackerDrawCards = new List<CardWar>();
+    List<CardWar> defenderDrawCards = new List<CardWar>();
+    Army attacker;
+    List<Army> armiesInRegion;
+
+    void Start()
     {
-        Army attacker = _attacker.GetComponent<Army>();
-        List<Army> armiesInRegion = attackedRegion.GetComponent<Tile>().armiesInRegion;
+        _attacker.GetComponent<Army>().cardList = XmlLoader.instance.GetWarCards();
+        army1.cardList = XmlLoader.instance.GetWarCards();
+        army2.cardList = XmlLoader.instance.GetWarCards();
+        attackedRegion.GetComponent<Tile>().armiesInRegion.Add(army1);
+        attackedRegion.GetComponent<Tile>().armiesInRegion.Add(army2);
+        
+        GetArmies();
+        Czekaj()
+    }
+    IEnumerator GetArmies()
+    {
+        attacker = _attacker.GetComponent<Army>();
+        armiesInRegion = attackedRegion.GetComponent<Tile>().armiesInRegion;
+        regionText.text = "Region: " + attackedRegion.GetComponent<Tile>().tileName;
 
         if (_attacker == null || armiesInRegion == null)
         {
             Debug.LogError("brak armi do porównania - nie prawidłowe obiekty podane jako parametry funkcji CompareArmies \n" +
                            " Podaj obiekt zawierający skrypt Army , oraz drugi zawierający skrypt Tile");
         }
+        yield return new WaitForSeconds(5f);
+        
+       
 
+    }
 
-        //w tych dwóch zmiennych przechowywane będą karty odłożone gdy nie mogły ze sobą walczyć
-        List<CardWar> attackerDrawCards = new List<CardWar>();
-        List<CardWar> defenderDrawCards = new List<CardWar>();
+    void Czekaj()
+    {
+        for (int i = 0; i < attacker.cardList.Count && i < 3; i++)
+            if (attacker.cardList[i].GetComponent<CardWar>().type != attackedRegion.GetComponent<Tile>().restriction)
+            {
+                Debug.Log("Armia nie spełnia wymagań");
+                battleStage.text = "Armia atakująca nie spełnia wymagań";
+            }
+        
+       
+    }
+    //wynik metody ukazany z perspektywy atakującego
+    public FightResult CompareArmies(GameObject _attacker, GameObject attackedRegion)
+    {
         FightResult cmpResult;
-
-        //dodać sprawdzenie czy pierwsza karta w armii atakującego nie jest nukiem?
-        //USUNĄĆ NUKI Z ARMII, TRZEBA JE DODAĆ JAKO OPCJĘ NA JEDEN GUZIK W DOWOLNYM MOMENCIE
-
         //Sprawdzenie czy napastnik posiada w swojej talii
         //karty ułożone tak aby można było najechać region
         for (int i = 0; i < attacker.cardList.Count && i < 3; i++)
