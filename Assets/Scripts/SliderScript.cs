@@ -14,6 +14,15 @@ public class SliderScript : MonoBehaviour {
     public int off = 3;
     public Transform midTransform;
 
+    public void SetCards(List<GameObject> value)
+    {
+        
+            if (cardsInSlider != null)
+                foreach (GameObject x in cardsInSlider) x.transform.position = Vector3.zero;
+            cardsInSlider = value;
+            CheckCountInList();
+            ResetLayout();
+    }
     
     void Start()
     {
@@ -33,7 +42,7 @@ public class SliderScript : MonoBehaviour {
     void OnTriggerStay2D(Collider2D col)
     {
         if (!col.gameObject.GetComponent<CardDragAndDrop>().clicked) {
-            col.gameObject.transform.position = new Vector3(midTransform.position.x, midTransform.position.y, cardsInSlider[0].transform.position.z);
+            col.gameObject.transform.position = new Vector3(midTransform.position.x, midTransform.position.y, midTransform.position.z-1);
         if (!cardsInSlider.Contains(col.gameObject))
         {
             this.cardsInSlider.Add(col.gameObject);
@@ -53,8 +62,7 @@ public class SliderScript : MonoBehaviour {
         {
             mid = -1;
             prevMid = -1;
-            nextMid = -1;
-            
+            nextMid = -1; 
         }
         else
         {
@@ -62,7 +70,6 @@ public class SliderScript : MonoBehaviour {
             prevMid = 0;
             nextMid = 2;
         }
-
     }
     void LoadCards(List<GameObject> karty)
     {
@@ -76,8 +83,9 @@ public class SliderScript : MonoBehaviour {
         ResetLayout();
     }
         
-    void ResetLayout()
+   public void ResetLayout()
     {
+       // CheckCountInList();
         if (mid == -2) ; else
         if (mid == -1)
         {
@@ -118,7 +126,7 @@ public class SliderScript : MonoBehaviour {
 
    public void MoveRight()
     {
-        Debug.Log(cardsInSlider.Count);
+        
         if (mid != -1 && mid != -2)
         { 
         prevMid = mid;
@@ -126,7 +134,7 @@ public class SliderScript : MonoBehaviour {
         nextMid = (nextMid + 1) % cardsInSlider.Count;
         }
         ResetLayout();
-      
+        Debug.Log(cardsInSlider.Count + " prewMID " + prevMid);
     }
 
   public  void MoveLeft()
