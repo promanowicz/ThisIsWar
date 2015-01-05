@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\XmlLoader.cs" />
      <Compile Include="Assets\TempStuff\TemporaryForTesting.cs" />
      <None Include="Assets\Other\jednostki.txt" />
+     <None Include="Assets\Elementals\!Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

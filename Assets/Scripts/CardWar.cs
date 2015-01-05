@@ -27,49 +27,17 @@ public enum CardType
 
 public class CardWar : MonoBehaviour {
 
-    public string cardName
-    {
-        get;
-        private set;
-    }
-    public string description
-    {
-        get;
-        private set;
-    }
-    public int initiative
-    {
-        get;
-        private set;
-    }
-    public int fireRate
-    {
-        get;
-        private set;
-    }
-    public int defence
-    {
-        get;
-        private set;
-    }
-    public int range
-    {
-        get;
-        private set;
-    }
-    public int technology
-    {
-        get;
-        private set;
-    }
-    public CardType type
-    {
-        get;
-        private set;
-    }
+    public string cardName;
+    public string description;
+    public int initiative;
+    public int fireRate;
+    public int defence;
+    public int range;
+    public int technology;
+    public CardType type;
 
-    public List<CardType> fightsAgainst { get; private set; }
-    public List<CardType> supportAgainst { get; private set; }
+    public List<CardType> fightsAgainst;
+    public List<CardType> supportAgainst;
 	
     public void SetCardValues(int _initiative, int _fireRate, int _defence, int _range, int _technology, CardType _type)
     {

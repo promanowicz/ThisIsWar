@@ -10,3 +10,15 @@ D:\Dropbox\This is War!\This Is War - Unity Project\Temp\bin\Debug\Unity.DataCon
 D:\Dropbox\This is War!\This Is War - Unity Project\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 D:\Dropbox\This is War!\This Is War - Unity Project\obj\Debug\Assembly-CSharp.dll
 D:\Dropbox\This is War!\This Is War - Unity Project\obj\Debug\Assembly-CSharp.pdb
+D:\This Is War - Unity Project\Temp\bin\Debug\Assembly-CSharp.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\This Is War - Unity Project\Temp\bin\Debug\UnityEditor.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\UnityEngine.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\UnityEngine.UI.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\Mono.Cecil.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\nunit.framework.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\Unity.DataContract.dll
+D:\This Is War - Unity Project\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\This Is War - Unity Project\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\This Is War - Unity Project\obj\Debug\Assembly-CSharp.dll
+D:\This Is War - Unity Project\obj\Debug\Assembly-CSharp.pdb
