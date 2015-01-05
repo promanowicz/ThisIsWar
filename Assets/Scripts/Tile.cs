@@ -6,7 +6,7 @@ public class Tile : MonoBehaviour {
 
 	public List<Tile> neighbours;
 	public GameManager gameManager;
-	public Transform tileInfo;
+	//public Transform tileInfo;
 	public Player owner;
 	public Color tileColor;
 	public bool production;
@@ -25,7 +25,7 @@ public class Tile : MonoBehaviour {
 
 	void OnMouseOver ()
 	{
-		if(gameManager.gamePhase == Phase.MOVE)
+		/*if(gameManager.gamePhase == Phase.MOVE)
 		{
 			tileInfo.position = new Vector3(Input.mousePosition.x,Input.mousePosition.y);
 
@@ -38,7 +38,7 @@ public class Tile : MonoBehaviour {
 				tileInfo.GetComponent<RectTransform> ().pivot = new Vector2 (tileInfo.GetComponent<RectTransform> ().pivot.x, 1);
 			else
 				tileInfo.GetComponent<RectTransform> ().pivot = new Vector2 (tileInfo.GetComponent<RectTransform> ().pivot.x, 0);
-		}
+		}*/
 	}
 
 	void OnMouseDown ()

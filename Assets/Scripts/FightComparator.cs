@@ -51,7 +51,7 @@ public class FightComparator : MonoBehaviour
         attackedRegion.GetComponent<Tile>().armiesInRegion.Add(army2);
         
         GetArmies();
-        Czekaj()
+		Czekaj ();
     }
     IEnumerator GetArmies()
     {
