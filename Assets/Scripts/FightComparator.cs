@@ -57,9 +57,6 @@ public class FightComparator : MonoBehaviour
 
         
         GetArmies();
-<<<<<<< HEAD
-		Czekaj ();
-=======
         StartCoroutine(CompareArmies(result));
 
     }
@@ -93,8 +90,7 @@ public class FightComparator : MonoBehaviour
             attackerDrawCards[0].transform.position=playerAsupportPos.position;
         if(defenderDrawCards.Count>0)
             defenderDrawCards[0].transform.position=playerBsupportPos.position;
-
->>>>>>> 04498521d2afe7c72880df723ea6eeca2e5ed865
+		
     }
 
     void GetArmies()
