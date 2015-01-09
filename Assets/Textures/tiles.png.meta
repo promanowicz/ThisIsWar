@@ -86,28 +86,28 @@ TextureImporter:
         y: 680
         width: 131
         height: 351
-      alignment: 9
-      pivot: {x: .629672348, y: .602997065}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_1
       rect:
         serializedVersion: 2
-        x: 276
+        x: 278
         y: 809
         width: 365
         height: 222
-      alignment: 9
-      pivot: {x: .5, y: .241014913}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_2
       rect:
         serializedVersion: 2
         x: 276
-        y: 680
+        y: 682
         width: 365
         height: 129
-      alignment: 9
-      pivot: {x: .458233386, y: .476364732}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_3
       rect:
@@ -116,8 +116,8 @@ TextureImporter:
         y: 560
         width: 293
         height: 120
-      alignment: 9
-      pivot: {x: .682848394, y: .445554614}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_4
       rect:
@@ -126,8 +126,8 @@ TextureImporter:
         y: 560
         width: 203
         height: 120
-      alignment: 9
-      pivot: {x: .44635883, y: .383849591}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_5
       rect:
@@ -136,8 +136,8 @@ TextureImporter:
         y: 430
         width: 496
         height: 130
-      alignment: 9
-      pivot: {x: .600109875, y: .51675272}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_6
       rect:
@@ -156,8 +156,8 @@ TextureImporter:
         y: 239
         width: 259
         height: 191
-      alignment: 9
-      pivot: {x: .646808863, y: .383248866}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_8
       rect:
@@ -166,8 +166,8 @@ TextureImporter:
         y: 1
         width: 259
         height: 237
-      alignment: 9
-      pivot: {x: .52486819, y: .506039262}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_9
       rect:
@@ -176,8 +176,8 @@ TextureImporter:
         y: 753
         width: 256
         height: 278
-      alignment: 9
-      pivot: {x: .624404192, y: .411477059}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_10
       rect:
@@ -186,8 +186,8 @@ TextureImporter:
         y: 431
         width: 156
         height: 323
-      alignment: 9
-      pivot: {x: .477437735, y: .598073125}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_11
       rect:
@@ -196,18 +196,18 @@ TextureImporter:
         y: 1
         width: 228
         height: 429
-      alignment: 9
-      pivot: {x: .541166604, y: .565636098}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_12
       rect:
         serializedVersion: 2
         x: 797
-        y: 658
+        y: 660
         width: 148
         height: 95
-      alignment: 9
-      pivot: {x: .702147186, y: .401200145}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_13
       rect:
@@ -216,8 +216,8 @@ TextureImporter:
         y: 548
         width: 148
         height: 110
-      alignment: 9
-      pivot: {x: .557488084, y: .389929205}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_14
       rect:
@@ -226,8 +226,8 @@ TextureImporter:
         y: 430
         width: 278
         height: 118
-      alignment: 9
-      pivot: {x: .530605197, y: .430670023}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_15
       rect:
@@ -236,8 +236,8 @@ TextureImporter:
         y: 753
         width: 174
         height: 278
-      alignment: 9
-      pivot: {x: .691868246, y: .178720385}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_16
       rect:
@@ -246,18 +246,18 @@ TextureImporter:
         y: 646
         width: 126
         height: 107
-      alignment: 9
-      pivot: {x: .524087548, y: .398698181}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_17
       rect:
         serializedVersion: 2
-        x: 945
+        x: 947
         y: 548
         width: 165
         height: 98
-      alignment: 9
-      pivot: {x: .539416134, y: .438061148}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_18
       rect:
@@ -276,18 +276,18 @@ TextureImporter:
         y: 1
         width: 263
         height: 310
-      alignment: 9
-      pivot: {x: .475670397, y: .673066258}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_20
       rect:
         serializedVersion: 2
         x: 1075
-        y: 430
+        y: 432
         width: 170
         height: 118
-      alignment: 9
-      pivot: {x: .513177156, y: .392422438}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_21
       rect:
@@ -296,8 +296,8 @@ TextureImporter:
         y: 646
         width: 116
         height: 256
-      alignment: 9
-      pivot: {x: .487125784, y: .332280874}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_22
       rect:
@@ -306,8 +306,8 @@ TextureImporter:
         y: 902
         width: 491
         height: 129
-      alignment: 9
-      pivot: {x: .304257393, y: .389734536}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_23
       rect:
@@ -316,8 +316,8 @@ TextureImporter:
         y: 750
         width: 375
         height: 152
-      alignment: 9
-      pivot: {x: .630196631, y: .469649464}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_24
       rect:
@@ -326,8 +326,8 @@ TextureImporter:
         y: 646
         width: 165
         height: 104
-      alignment: 9
-      pivot: {x: .524890482, y: .403070897}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_25
       rect:
@@ -336,8 +336,8 @@ TextureImporter:
         y: 548
         width: 191
         height: 98
-      alignment: 9
-      pivot: {x: .546913981, y: .381896973}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_26
       rect:
@@ -346,8 +346,8 @@ TextureImporter:
         y: 429
         width: 195
         height: 118
-      alignment: 9
-      pivot: {x: .411925942, y: .36394617}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_27
       rect:
@@ -356,8 +356,8 @@ TextureImporter:
         y: 1
         width: 230
         height: 429
-      alignment: 9
-      pivot: {x: .470780611, y: .781762898}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_28
       rect:
@@ -366,18 +366,18 @@ TextureImporter:
         y: 548
         width: 186
         height: 98
-      alignment: 9
-      pivot: {x: .531100392, y: .402477652}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_29
       rect:
         serializedVersion: 2
         x: 1352
-        y: 646
+        y: 648
         width: 135
         height: 104
-      alignment: 9
-      pivot: {x: .579982281, y: .389255226}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_30
       rect:
@@ -396,8 +396,8 @@ TextureImporter:
         y: 300
         width: 194
         height: 248
-      alignment: 9
-      pivot: {x: .419488966, y: .418358713}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_32
       rect:
@@ -406,8 +406,8 @@ TextureImporter:
         y: 1
         width: 426
         height: 299
-      alignment: 9
-      pivot: {x: .467409223, y: .614149511}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_33
       rect:
@@ -416,8 +416,8 @@ TextureImporter:
         y: 750
         width: 304
         height: 281
-      alignment: 9
-      pivot: {x: .443267435, y: .404253662}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_34
       rect:
@@ -426,8 +426,8 @@ TextureImporter:
         y: 548
         width: 261
         height: 202
-      alignment: 9
-      pivot: {x: .310656786, y: .457819879}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: map_35
       rect:
@@ -436,8 +436,8 @@ TextureImporter:
         y: 300
         width: 232
         height: 248
-      alignment: 9
-      pivot: {x: .506594419, y: .292321593}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
