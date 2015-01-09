@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-	public int minutes = 2;
+	public int minutes = 1;
 	public int seconds = 0;
 	public Text timeText;
 
