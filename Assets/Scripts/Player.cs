@@ -11,9 +11,9 @@ public class Player : MonoBehaviour {
     public List<GameObject> cardsReceived; //karty otrzymywane na począktu rundy
 
 
-	public void CreateArmyCounter (Tile tile)
+	public void CreateArmyCounter (Tile tile, int slot)
 	{
-		GameObject counter = (GameObject)Network.Instantiate (counterPrefab, tile.transform.position, Quaternion.Euler(90,0,0), 0);
+		GameObject counter = (GameObject)Network.Instantiate (counterPrefab, tile.transform.GetChild (slot).position, Quaternion.Euler(90,0,0), 0);
 		counter.transform.position = tile.transform.position;
 		counter.transform.parent = transform;
 		counter.renderer.material.color = playerColor;

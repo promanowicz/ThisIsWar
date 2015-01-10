@@ -6,7 +6,6 @@ public class Tile : MonoBehaviour {
 
 	public List<Tile> neighbours;
 	public GameManager gameManager;
-	public Transform tileInfo;
 	public Player owner;
 	public Color tileColor;
 	public bool production;
@@ -23,33 +22,15 @@ public class Tile : MonoBehaviour {
 		GetComponent<SpriteRenderer> ().color = tileColor * Color.grey;
 	}
 
-	void OnMouseOver ()
-	{
-		if(gameManager.gamePhase == Phase.MOVE)
-		{
-			tileInfo.position = new Vector3(Input.mousePosition.x,Input.mousePosition.y);
-
-			if (Input.mousePosition.x > Screen.width / 2)
-				tileInfo.GetComponent<RectTransform> ().pivot = new Vector2 (1, tileInfo.GetComponent<RectTransform> ().pivot.y);
-			else
-				tileInfo.GetComponent<RectTransform> ().pivot = new Vector2 (0, tileInfo.GetComponent<RectTransform> ().pivot.y);
-
-			if (Input.mousePosition.y > Screen.height / 2)
-				tileInfo.GetComponent<RectTransform> ().pivot = new Vector2 (tileInfo.GetComponent<RectTransform> ().pivot.x, 1);
-			else
-				tileInfo.GetComponent<RectTransform> ().pivot = new Vector2 (tileInfo.GetComponent<RectTransform> ().pivot.x, 0);
-		}
-	}
-
 	void OnMouseDown ()
 	{
-		if(gameManager.IfPlayerTurn()&&!owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
+		if(gameManager.IfPlayerTurn() && !owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
 		{
 			owner = gameManager.players[gameManager.currPlayerID];
 			tileColor = owner.playerColor;
 			tileColor = new Color(tileColor.r, tileColor.g, tileColor.b, 0.25f);
 			GetComponent<SpriteRenderer>().color = tileColor;
-			owner.CreateArmyCounter (this);
+			owner.CreateArmyCounter (this, 0);
 			networkView.RPC("UpdateTile", RPCMode.Others);
 			gameManager.NextPlayer ();
 		}
@@ -60,12 +41,26 @@ public class Tile : MonoBehaviour {
 		GetComponent<SpriteRenderer>().color = tileColor;
 		if(!owner)
 			GetComponent<SpriteRenderer>().enabled = false;
+		
 	}
 
 	// Use this for initialization
 	void Start () 
 	{
 		GetComponent<SpriteRenderer>().enabled = false;
+
+		//TWORZENIE SLOTÓW ARMII
+		for(int i = 0; i < 3; i++)
+		{
+			GameObject slot = new GameObject("Army Slot "+(i+1));
+			slot.transform.parent = transform;
+		}
+		//pozycja slotu 1.
+		transform.GetChild (0).localPosition = new Vector3 (0, 0.3f, 0);
+		//pozycja slotu 2.
+		transform.GetChild (1).localPosition = new Vector3 (-0.3f, 0, 0);
+		//pozycja slotu 3.
+		transform.GetChild (2).localPosition = new Vector3 (0.3f, 0, 0);
 	}
 	
 	// Update is called once per frame
@@ -91,5 +86,4 @@ public class Tile : MonoBehaviour {
 				tileColor = new Color (tileColor.r, tileColor.g, tileColor.b, 0.25f);
 				gameManager.NextPlayer ();
 	}
-		
 }

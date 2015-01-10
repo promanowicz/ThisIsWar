@@ -90,7 +90,7 @@ public class FightComparator : MonoBehaviour
             attackerDrawCards[0].transform.position=playerAsupportPos.position;
         if(defenderDrawCards.Count>0)
             defenderDrawCards[0].transform.position=playerBsupportPos.position;
-
+		
     }
 
     void GetArmies()

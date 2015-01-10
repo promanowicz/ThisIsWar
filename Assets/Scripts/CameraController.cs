@@ -30,13 +30,13 @@ public class CameraController : MonoBehaviour {
 		else
 		{
 			//RUCH KAMERY
-			transform.position += new Vector3 (Input.GetAxis ("Mouse X") * 2  * Time.deltaTime, Input.GetAxis ("Mouse Y") * 2 * Time.deltaTime, 0);
+			transform.position += new Vector3 (Input.GetAxis ("Mouse X") * 3  * Time.deltaTime, Input.GetAxis ("Mouse Y") * 3 * Time.deltaTime, 0);
 
 			//OGRANICZENIA
-			if(transform.position.x<-3)
-				transform.position = new Vector3(-3, transform.position.y,  transform.position.z);
-			if(transform.position.x>3)
-				transform.position = new Vector3(3, transform.position.y,  transform.position.z);
+			if(transform.position.x<-6)
+				transform.position = new Vector3(-6, transform.position.y,  transform.position.z);
+			if(transform.position.x>8.5f)
+				transform.position = new Vector3(8.5f, transform.position.y,  transform.position.z);
 
 			if(isPerspective)
 			{
@@ -47,10 +47,10 @@ public class CameraController : MonoBehaviour {
 			}
 			else
 			{
-				if(transform.position.y<-2)
-					transform.position = new Vector3(transform.position.x, -2,  transform.position.z);
-				if(transform.position.y>2)
-					transform.position = new Vector3(transform.position.x, 2,  transform.position.z);
+				if(transform.position.y<-5.5f)
+					transform.position = new Vector3(transform.position.x, -5.5f,  transform.position.z);
+				if(transform.position.y>1.5f)
+					transform.position = new Vector3(transform.position.x, 1.5f,  transform.position.z);
 			}
 		}
 	}
@@ -61,12 +61,12 @@ public class CameraController : MonoBehaviour {
 
 		if(!isPerspective)
 		{
-			transform.position = Vector3.Lerp (transform.position, new Vector3(0, -10, -20), 0.05f);
-			if(Vector3.Distance (transform.position, new Vector3(0, -10, -20))<0.1)
+			transform.position = Vector3.Lerp (transform.position, new Vector3(0, -5, -10), 0.05f);
+			if(Vector3.Distance (transform.position, new Vector3(0, -5, -10))<0.1)
 			{
 				isMoving = false;
 				isPerspective = true;
-				transform.position = new Vector3(0, -10, -20);
+				transform.position = new Vector3(0, -5, -10);
 			}
 		}
 		else
