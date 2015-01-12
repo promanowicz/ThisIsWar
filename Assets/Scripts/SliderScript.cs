@@ -31,7 +31,8 @@ public class SliderScript : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.GetComponent<CardDragAndDrop>().clicked) { 
+        if (col.gameObject.GetComponent<CardDragAndDrop>().clicked) {
+            Debug.Log("wyciągam karte");
         cardsInSlider.Remove(col.gameObject);
         CheckCountInList();
         ResetLayout();
@@ -76,7 +77,7 @@ public class SliderScript : MonoBehaviour {
 
         foreach (GameObject x in karty)
         {
-            if (cardsInSlider.Count > 3) x.GetComponent<BoxCollider2D>().enabled = false;
+            if (cardsInSlider.Count > 3) x.GetComponent<CircleCollider2D>().enabled = false;
             cardsInSlider.Add(x);
         }
         CheckCountInList();
@@ -89,7 +90,7 @@ public class SliderScript : MonoBehaviour {
         if (mid == -2) ; else
         if (mid == -1)
         {
-            cardsInSlider[0].GetComponent<BoxCollider2D>().enabled = true;
+            cardsInSlider[0].GetComponent<CircleCollider2D>().enabled = true;
             switch (cardsInSlider.Count)
             {
                 case 0:
@@ -111,9 +112,9 @@ public class SliderScript : MonoBehaviour {
         }
         else { 
 
-        cardsInSlider[prevMid].GetComponent<BoxCollider2D>().enabled = false;
-        cardsInSlider[nextMid].GetComponent<BoxCollider2D>().enabled = false;
-        cardsInSlider[mid].GetComponent<BoxCollider2D>().enabled = true;
+        cardsInSlider[prevMid].GetComponent<CircleCollider2D>().enabled = false;
+        cardsInSlider[nextMid].GetComponent<CircleCollider2D>().enabled = false;
+        cardsInSlider[mid].GetComponent<CircleCollider2D>().enabled = true;
 
         cardsInSlider[prevMid].transform.position = new Vector3(midTransform.position.x - off, midTransform.position.y, cardsInSlider[prevMid].transform.position.z);
         cardsInSlider[mid].transform.position = new Vector3(midTransform.position.x, midTransform.position.y, cardsInSlider[mid].transform.position.z);

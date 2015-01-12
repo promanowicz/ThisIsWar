@@ -7,9 +7,9 @@ public class ArmiesSlider : MonoBehaviour {
 
     public List<Army> playerArmies;
     public GameObject player;
-    public GameObject text;
+  //  public GameObject text;
     public SliderScript InArmySlider;
-    Text textObj;
+    public TextMesh textObj;
     string napis = "Numer Armii \n";
     string numerArmii = "";
     int currentArmy = 0;
@@ -19,7 +19,7 @@ public class ArmiesSlider : MonoBehaviour {
     void Awake()
     {
        
-        textObj = text.GetComponent<Text>();
+       // textObj = text.GetComponent<Text>();
 
     }
   
@@ -34,7 +34,6 @@ public class ArmiesSlider : MonoBehaviour {
         playerArmies.Add(a3);
         playerArmies[2].cardList = XmlLoader.instance.GetWarCards();
         ShowArmyCards();
-
         textObj.text = napis + numerArmii;
 	}
 	
@@ -69,7 +68,7 @@ public class ArmiesSlider : MonoBehaviour {
     {
         currentArmy -= 1;
         if (currentArmy < 0 ) currentArmy = playerArmies.Count-1;
-       
+        ShowArmyCards();
     }
 
 
