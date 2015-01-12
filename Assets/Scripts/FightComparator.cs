@@ -352,7 +352,7 @@ public class BoolWrapper
 {
     public bool Value { get; set; }
     public BoolWrapper(bool value) { this.Value = value; }
-    public string ToString(){
+    public override string ToString(){
         return Value.ToString();
     }
 }
@@ -361,7 +361,7 @@ public class FightResultWrapper
 {
     public FightResult Value { get; set; }
     public FightResultWrapper(FightResult value) { this.Value = value; }
-    public string ToString()
+    public override string ToString()
     {
         return Value.ToString();
     }

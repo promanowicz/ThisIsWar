@@ -22,10 +22,17 @@ public enum CardType
     SUBMARINE,
     SHIP,
     BOMBER,
-    NUKE
+   // NUKE
 }
 
 public class CardWar : MonoBehaviour {
+
+    public TextMesh car;
+    public TextMesh ini;
+    public TextMesh fir;
+    public TextMesh def;
+    public TextMesh ran;
+    public TextMesh tec;
 
     public string cardName;
     public string description;
@@ -63,8 +70,18 @@ public class CardWar : MonoBehaviour {
         type = _type;
         fightsAgainst = _fightsAgainst;
         supportAgainst = _supportAgainst;
+        LoadIntoTextMesh();
     }
 
+    void LoadIntoTextMesh()
+    {
+        car.text = cardName;
+        ini.text = initiative.ToString();
+        fir.text = fireRate.ToString();
+        def.text = defence.ToString();
+        ran.text = range.ToString();
+        tec.text = technology.ToString();
+    }
     public void SetSprite(Sprite newSprite)
     {
         this.GetComponent<SpriteRenderer>().sprite = newSprite;
