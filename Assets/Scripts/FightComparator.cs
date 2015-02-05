@@ -148,8 +148,6 @@ public class FightComparator : MonoBehaviour
                     battleStage.text = "Attacker Lost!"; 
                     break;
                 }
-
-
                 //wynik porówniania kart: pierwszej karty w armii atakującej, i pierwszej karty w aktualnej armii broniącej z uwzględnieniem wsparcia;
                 if (attackerDrawCards.Count > 0) tmp1 = attackerDrawCards[0];
                 else tmp1 = null;
