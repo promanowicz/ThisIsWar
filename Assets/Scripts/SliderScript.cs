@@ -13,6 +13,7 @@ public class SliderScript : MonoBehaviour {
     int nextMid = 0;
     public int off = 3;
     public Transform midTransform;
+    public bool loadCards = false;
 
     public void SetCards(List<GameObject> value)
     {
@@ -26,7 +27,7 @@ public class SliderScript : MonoBehaviour {
     
     void Start()
     {
-        LoadCards(XmlLoader.instance.GetWarCards());
+        if(loadCards)LoadCards(XmlLoader.instance.GetWarCards());
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -44,6 +45,8 @@ public class SliderScript : MonoBehaviour {
     {
         if (!col.gameObject.GetComponent<CardDragAndDrop>().clicked) {
             col.gameObject.transform.position = new Vector3(midTransform.position.x, midTransform.position.y, midTransform.position.z-1);
+            col.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+
         if (!cardsInSlider.Contains(col.gameObject))
         {
             this.cardsInSlider.Add(col.gameObject);

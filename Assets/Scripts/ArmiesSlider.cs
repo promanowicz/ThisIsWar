@@ -7,42 +7,43 @@ public class ArmiesSlider : MonoBehaviour {
 
     public List<Army> playerArmies;
     public GameObject player;
-  //  public GameObject text;
+  
     public SliderScript InArmySlider;
     public TextMesh textObj;
     string napis = "Numer Armii \n";
     string numerArmii = "";
     int currentArmy = 0;
 
-    public Army a1, a2, a3;
-
+   // public Army a1, a2, a3;
+  //  public GameObject text;
     void Awake()
     {
-       
-       // textObj = text.GetComponent<Text>();
+
+     //   textObj = text.GetComponent<Text>();
 
     }
   
 	// Use this for initialization
 	void Start () {
 
-        playerArmies = new List<Army>();
-        playerArmies.Add(a1);
-        playerArmies[0].cardList = XmlLoader.instance.GetWarCards();
-        playerArmies.Add(a2);
-        playerArmies[1].cardList = XmlLoader.instance.GetWarCards();
-        playerArmies.Add(a3);
-        playerArmies[2].cardList = XmlLoader.instance.GetWarCards();
-        ShowArmyCards();
-        textObj.text = napis + numerArmii;
+        //do testowania wczytywanie armii z objectow
+        //playerArmies = new List<Army>();
+        //playerArmies.Add(a1);
+        //playerArmies[0].cardList = XmlLoader.instance.GetWarCards();
+        //playerArmies.Add(a2);
+        //playerArmies[1].cardList = XmlLoader.instance.GetWarCards();
+        //playerArmies.Add(a3);
+        //playerArmies[2].cardList = XmlLoader.instance.GetWarCards();
+        //ShowArmyCards();
+        //textObj.text = napis + numerArmii;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         textObj.text = napis + numerArmii;
 	}
 
-    void GetPlayerArmies()
+   public void GetPlayerArmies()
     {    
         Player temp = player.GetComponent<Player>();
         foreach (GameObject x in temp.army) playerArmies.Add(x.GetComponent<Army>());
@@ -51,9 +52,11 @@ public class ArmiesSlider : MonoBehaviour {
     void ShowArmyCards()
     {
         if (playerArmies.Count <= 0) numerArmii = "brak armii";
-        else numerArmii = currentArmy.ToString();
-        InArmySlider.SetCards( playerArmies[currentArmy].cardList);
-        
+        else
+        {
+            numerArmii = currentArmy.ToString();
+            InArmySlider.SetCards(playerArmies[currentArmy].cardList);
+        }
     }
 
     public void MoveRight()
@@ -70,8 +73,5 @@ public class ArmiesSlider : MonoBehaviour {
         if (currentArmy < 0 ) currentArmy = playerArmies.Count-1;
         ShowArmyCards();
     }
-
-
-
 
 }
