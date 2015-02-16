@@ -30,7 +30,7 @@ public class Tile : MonoBehaviour {
 			tileColor = owner.playerColor;
 			tileColor = new Color(tileColor.r, tileColor.g, tileColor.b, 0.25f);
 			GetComponent<SpriteRenderer>().color = tileColor;
-			owner.CreateArmyCounter (this, 0);
+			owner.CreateArmyCounter (this);
 			//networkView.RPC("UpdateTile", RPCMode.Others);
 			gameManager.NextPlayer ();
 		}
