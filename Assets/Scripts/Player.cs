@@ -11,18 +11,23 @@ public class Player : MonoBehaviour {
     public List<GameObject> cardsReceived; //karty otrzymywane na począktu rundy
 
 
-	public void CreateArmyCounter (Tile tile, int slot)
+	public void CreateArmyCounter (Tile tile)
 	{
-		GameObject counter = (GameObject)Network.Instantiate (counterPrefab, tile.transform.GetChild (slot).position, Quaternion.Euler(90,0,0), 0);
-		counter.transform.position = tile.transform.position;
-		counter.transform.parent = transform;
-		counter.renderer.material.color = playerColor;
+		//GameObject counter = (GameObject)Instantiate (counterPrefab, tile.transform.GetChild (slot).position, Quaternion.Euler(90,0,0));
+		//counter.transform.position = tile.transform.position;
+		//counter.transform.parent = transform;
+		//counter.renderer.material.color = playerColor;
 
+		//TWORZENIE NOWEGO SLOTU DLA ARMII
+		GameObject newSlot = new GameObject ("Army Slot");
+		newSlot.AddComponent<Army> ();
+		newSlot.transform.position = tile.transform.position;
+		newSlot.transform.parent = tile.transform;
 
-		Army newArmy = counter.GetComponent<Army> ();
+		Army newArmy = newSlot.GetComponent<Army> ();
 		newArmy.owner = this;
 		newArmy.dislocation = tile;
-		army.Add (counter);
+		army.Add (newSlot);
 	}
 
 	public void CreateFogOfWar ()

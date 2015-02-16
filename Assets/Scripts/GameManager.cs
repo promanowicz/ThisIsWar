@@ -13,7 +13,7 @@ public enum Phase
 
 public class GameManager : MonoBehaviour {
 
-	public NetworkManager netManager;
+	//public NetworkManager netManager;
 
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
@@ -84,8 +84,8 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public bool IfPlayerTurn()
+	/*public bool IfPlayerTurn()
 	{
 			return currPlayerID == netManager.GetPlayerID();
-	}
+	}*/
 }

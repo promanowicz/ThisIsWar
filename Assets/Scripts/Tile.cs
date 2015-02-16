@@ -24,14 +24,14 @@ public class Tile : MonoBehaviour {
 
 	void OnMouseDown ()
 	{
-		if(gameManager.IfPlayerTurn() && !owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
+		if(/*gameManager.IfPlayerTurn() && */!owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
 		{
 			owner = gameManager.players[gameManager.currPlayerID];
 			tileColor = owner.playerColor;
 			tileColor = new Color(tileColor.r, tileColor.g, tileColor.b, 0.25f);
 			GetComponent<SpriteRenderer>().color = tileColor;
 			owner.CreateArmyCounter (this, 0);
-			networkView.RPC("UpdateTile", RPCMode.Others);
+			//networkView.RPC("UpdateTile", RPCMode.Others);
 			gameManager.NextPlayer ();
 		}
 	}
@@ -48,19 +48,7 @@ public class Tile : MonoBehaviour {
 	void Start () 
 	{
 		GetComponent<SpriteRenderer>().enabled = false;
-
-		//TWORZENIE SLOTÓW ARMII
-		for(int i = 0; i < 3; i++)
-		{
-			GameObject slot = new GameObject("Army Slot "+(i+1));
-			slot.transform.parent = transform;
-		}
-		//pozycja slotu 1.
-		transform.GetChild (0).localPosition = new Vector3 (0, 0.3f, 0);
-		//pozycja slotu 2.
-		transform.GetChild (1).localPosition = new Vector3 (-0.3f, 0, 0);
-		//pozycja slotu 3.
-		transform.GetChild (2).localPosition = new Vector3 (0.3f, 0, 0);
+		
 	}
 	
 	// Update is called once per frame
