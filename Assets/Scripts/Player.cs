@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,6 +10,7 @@ public class Player : MonoBehaviour {
     public List<GameObject> army = new List<GameObject>();
     public List<GameObject> strategyCards;
     public List<GameObject> cardsReceived; //karty otrzymywane na począktu rundy
+	public Text pointsText;
 
 
 	public void CreateArmyCounter (Tile tile)
@@ -28,6 +30,9 @@ public class Player : MonoBehaviour {
 		newArmy.owner = this;
 		newArmy.dislocation = tile;
 		army.Add (newSlot);
+
+		int points = int.Parse (pointsText.text);
+		pointsText.text = (++points).ToString ();
 	}
 
 	public void CreateFogOfWar ()

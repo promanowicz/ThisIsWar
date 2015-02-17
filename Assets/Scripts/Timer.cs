@@ -8,6 +8,13 @@ public class Timer : MonoBehaviour {
 	public int seconds = 0;
 	public Text timeText;
 
+	public static Timer instance;
+
+	void Awake ()
+	{
+		instance = this;
+	}
+
 	// Use this for initialization
 	void Start () 
 	{

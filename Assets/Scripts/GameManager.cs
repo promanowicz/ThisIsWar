@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour {
 
 	public void NextPlayer () //Przekazanie tury następnemu graczowi
 	{
+		Timer.instance.ResetTimer ();
+
 		currPlayerID++;
 		currPlayerID %= players.Count;
 		playerMarker.position = playerBars [currPlayerID].position;
