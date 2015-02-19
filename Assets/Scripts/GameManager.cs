@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour {
 	public int turn;
 	public Text phaseText;
 	//public Button nextTurnButton;
-    public int roundNumber;
+    //public int roundNumber;
+	public int baseCardNo = 5;
 
     public List<CardWar> allWarCards { get; set; }
     public List<CardWar> allStrategyCards { get; set; }
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-        roundNumber = 0;
+        //roundNumber = 0;
 
 	}
 	
@@ -67,7 +68,8 @@ public class GameManager : MonoBehaviour {
 		if(gamePhase == Phase.SETUP && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
-			//nextTurnButton.gameObject.SetActive (true);
+			//TWORZENIE ARMII DLA TERYTORIÓW NIEZALEŻNYCH
+			SetupArmies (XmlLoader.instance.allWarCards);
 		}
 
 		else if(gamePhase == Phase.REINFORCE && currPlayerID == 0)
@@ -90,4 +92,34 @@ public class GameManager : MonoBehaviour {
 	{
 			return currPlayerID == netManager.GetPlayerID();
 	}*/
+
+	//TWORZENIE ARMII DLA TERYTORIÓW NIEZALEŻNYCH
+	void SetupArmies (List<GameObject> cards)
+	{
+		foreach(Transform child in map)
+		{
+			if(child.name == "tile")
+			{
+				if(child.GetComponent<Tile>().owner == null)
+				{
+					//TWORZENIE NOWEGO SLOTU ARMII
+					GameObject newSlot = new GameObject ("Army Slot");
+					newSlot.AddComponent<Army> ();
+					newSlot.transform.position = child.transform.position;
+					newSlot.transform.parent = child.transform;
+					newSlot.transform.localScale = Vector3.one * 0.1f;
+
+					//LOSOWANIE KART DLA ARMII
+					for(int i = 0; i < baseCardNo; i++)
+					{
+						GameObject newCard = cards[Random.Range (0, cards.Count)];
+						newSlot.GetComponent<Army>().cardList.Add (newCard);
+					}
+
+					Sprite newSprite = newSlot.GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
+					newSlot.AddComponent<SpriteRenderer>().sprite = newSprite;
+				}
+			}
+		}
+	}
 }
