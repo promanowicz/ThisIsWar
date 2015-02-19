@@ -109,7 +109,7 @@ public class XmlLoader : MonoBehaviour {
                     case "firepower": _fireRate = ParseStringToInt(attrib.InnerText);
                         break;
 
-                    case "defence": _defence = ParseStringToInt(attrib.InnerText);
+                    case "defense": _defence = ParseStringToInt(attrib.InnerText);
                         break;
 
                     case "range": _range = ParseStringToInt(attrib.InnerText);
@@ -120,34 +120,36 @@ public class XmlLoader : MonoBehaviour {
 
                     //sekcja wczytywania ataku:
 
-                    case "vstank": if (attrib.Name == "1") _fightsAgainst.Add(CardType.TANK);
+                    case "vstank": if (attrib.InnerText == "1") _fightsAgainst.Add(CardType.TANK);
                         break;
-                    case "vshelicopter": if (attrib.Name == "1") _fightsAgainst.Add(CardType.HELICOPTER);
+                    case "vshelicopter": if (attrib.InnerText == "1") _fightsAgainst.Add(CardType.HELICOPTER);
                         break;
-                    case "vsfighter": if (attrib.Name == "1") _fightsAgainst.Add(CardType.FIGHTER);
+                    case "vsfighter": if (attrib.InnerText == "1") _fightsAgainst.Add(CardType.FIGHTER);
                         break;
-                    case "vsbomber": if (attrib.Name == "1") _fightsAgainst.Add(CardType.BOMBER);
+                    case "vsbomber": if (attrib.InnerText == "1") _fightsAgainst.Add(CardType.BOMBER);
                         break;
-                    case "vsnaval": if (attrib.Name == "1") _fightsAgainst.Add(CardType.SHIP);
+                    case "vsnaval": if (attrib.InnerText == "1") _fightsAgainst.Add(CardType.SHIP);
                         break;
-                    case "vssubmarine": if (attrib.Name == "1") _fightsAgainst.Add(CardType.SUBMARINE);
+                    case "vssubmarine": if (attrib.InnerText == "1") _fightsAgainst.Add(CardType.SUBMARINE);
                         break;
 
                     //sekcja wczytywania wsparcia:
 
-                    case "supporttank": if (attrib.Name == "1") _fightsAgainst.Add(CardType.TANK);
+                    case "supporttank": if (attrib.InnerText == "1") _supportAgainst.Add(CardType.TANK);
                         break;
-                    case "supporthelicopter": if (attrib.Name == "1") _fightsAgainst.Add(CardType.HELICOPTER);
+                    case "supporthelicopter": if (attrib.InnerText == "1") _supportAgainst.Add(CardType.HELICOPTER);
                         break;
-                    case "supportfighter": if (attrib.Name == "1") _fightsAgainst.Add(CardType.FIGHTER);
+                    case "supportfighter": if (attrib.InnerText == "1") _supportAgainst.Add(CardType.FIGHTER);
                         break;
-                    case "supportbomber": if (attrib.Name == "1") _fightsAgainst.Add(CardType.BOMBER);
+                    case "supportbomber": if (attrib.InnerText == "1") _supportAgainst.Add(CardType.BOMBER);
                         break;
-                    case "supportnaval": if (attrib.Name == "1") _fightsAgainst.Add(CardType.SHIP);
+                    case "supportnaval": if (attrib.InnerText == "1") _supportAgainst.Add(CardType.SHIP);
                         break;
-                    case "supportsubmarine": if (attrib.Name == "1") _fightsAgainst.Add(CardType.SUBMARINE);
+                    case "supportsubmarine": if (attrib.InnerText == "1") _supportAgainst.Add(CardType.SUBMARINE);
                         break;
 
+                    case "Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_": _description = attrib.InnerText;
+                        break;
                     default:
                         Debug.Log("Nie rozpoznałem nazwy attrybutu przy wczytywaniu z XML");
                         break;
@@ -166,6 +168,8 @@ public class XmlLoader : MonoBehaviour {
             karta.GetComponent<SpriteRenderer>().sprite = FindSprite(spriteName);
             //dodanie karty do card holdera
             allWarCards.Add(karta);
+            _fightsAgainst = new List<CardType>();
+            _supportAgainst = new List<CardType>();
 
         }
 

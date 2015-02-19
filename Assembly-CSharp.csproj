@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArmiesSlider.cs" />
      <Compile Include="Assets\Scripts\Army.cs" />
+     <Compile Include="Assets\Scripts\Battle.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CardDragAndDrop.cs" />
      <Compile Include="Assets\Scripts\CardStrategy.cs" />

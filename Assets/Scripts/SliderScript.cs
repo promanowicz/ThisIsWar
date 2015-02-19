@@ -14,6 +14,8 @@ public class SliderScript : MonoBehaviour {
     public int off = 3;
     public Transform midTransform;
     public bool loadCards = false;
+    public bool isCardNumberShown = false;
+    public TextMesh cardNumberTM;
 
     public void SetCards(List<GameObject> value)
     {
@@ -23,6 +25,7 @@ public class SliderScript : MonoBehaviour {
             cardsInSlider = value;
             CheckCountInList();
             ResetLayout();
+       
     }
     
     void Start()
@@ -85,10 +88,13 @@ public class SliderScript : MonoBehaviour {
         }
         CheckCountInList();
         ResetLayout();
+        MoveLeft();
     }
         
    public void ResetLayout()
     {
+        if (isCardNumberShown) cardNumberTM.text = "NR: " + (mid+1).ToString();
+
        // CheckCountInList();
         if (mid == -2) ; else
         if (mid == -1)

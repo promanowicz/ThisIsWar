@@ -54,6 +54,12 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+    public List<Army> GetArmies()
+    {
+        List<Army> lista = new List<Army>();
+        foreach(GameObject tmp in army)lista.Add(tmp.GetComponent<Army>());
+        return lista;
+    }
     //dodac ograniczenie ilosci pobieranych kart
     List<GameObject> GetWarCardsOnStartUp()
     {
