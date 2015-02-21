@@ -15,16 +15,12 @@ public class Player : MonoBehaviour {
 
 	public void CreateArmyCounter (Tile tile)
 	{
-		//GameObject counter = (GameObject)Instantiate (counterPrefab, tile.transform.GetChild (slot).position, Quaternion.Euler(90,0,0));
-		//counter.transform.position = tile.transform.position;
-		//counter.transform.parent = transform;
-		//counter.renderer.material.color = playerColor;
-
 		//TWORZENIE NOWEGO SLOTU DLA ARMII
 		GameObject newSlot = new GameObject ("Army Slot");
 		newSlot.AddComponent<Army> ();
 		newSlot.transform.position = tile.transform.position;
 		newSlot.transform.parent = tile.transform;
+		newSlot.transform.localScale = Vector3.one * 0.1f;
 
 		Army newArmy = newSlot.GetComponent<Army> ();
 		newArmy.owner = this;

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Tile : MonoBehaviour {
 
 	public List<Tile> neighbours;
+	public GameObject slotPrefab;
 	public GameManager gameManager;
 	public Player owner;
 	public Color tileColor;
@@ -48,7 +49,19 @@ public class Tile : MonoBehaviour {
 	void Start () 
 	{
 		GetComponent<SpriteRenderer>().enabled = false;
-		
+
+		//TWORZENIE SLOTÓW ARMII
+		for(int i = 0; i < 3; i++)
+		{
+			GameObject slot = (GameObject)Instantiate (slotPrefab);
+			slot.transform.parent = transform;
+		}
+		//pozycja slotu 1.
+		transform.GetChild (0).localPosition = new Vector3 (0, 0.3f, 0);
+		//pozycja slotu 2.
+		transform.GetChild (1).localPosition = new Vector3 (-0.3f, 0, 0);
+		//pozycja slotu 3.
+		transform.GetChild (2).localPosition = new Vector3 (0.3f, 0, 0);
 	}
 	
 	// Update is called once per frame

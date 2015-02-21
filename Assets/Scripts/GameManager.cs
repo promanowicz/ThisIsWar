@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
 
 	//public NetworkManager netManager;
 
+	public GameObject reinforcementPrefab;
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
 	public List<Player> players; //lista graczy
@@ -34,6 +35,9 @@ public class GameManager : MonoBehaviour {
         get;
         private set;
     }
+
+	private bool reinforcementIsOpen = false;
+	private GameObject reinforcementScreen;
 
     void Awake()
     {
@@ -68,6 +72,7 @@ public class GameManager : MonoBehaviour {
 		if(gamePhase == Phase.SETUP && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
+			turn++;
 			//TWORZENIE ARMII DLA TERYTORIÓW NIEZALEŻNYCH
 			SetupArmies (XmlLoader.instance.allWarCards);
 		}
@@ -86,6 +91,21 @@ public class GameManager : MonoBehaviour {
 			phaseText.text = gamePhase.ToString ();
 			//players[currPlayerID].CreateFogOfWar ();
 		}
+
+		if(gamePhase == Phase.REINFORCE)
+		{
+			if(reinforcementIsOpen)
+			{
+				reinforcementIsOpen = false;
+				Destroy (reinforcementScreen);
+			}
+
+			reinforcementScreen = (GameObject)Instantiate (reinforcementPrefab);
+			ArmiesSlider armiesSlider = reinforcementScreen.transform.GetChild (3).GetComponent<ArmiesSlider>();
+			armiesSlider.player = players[currPlayerID].gameObject;
+			armiesSlider.GetPlayerArmies ();
+			reinforcementIsOpen = true;
+		}
 	}
 
 	/*public bool IfPlayerTurn()
@@ -102,22 +122,16 @@ public class GameManager : MonoBehaviour {
 			{
 				if(child.GetComponent<Tile>().owner == null)
 				{
-					//TWORZENIE NOWEGO SLOTU ARMII
-					GameObject newSlot = new GameObject ("Army Slot");
-					newSlot.AddComponent<Army> ();
-					newSlot.transform.position = child.transform.position;
-					newSlot.transform.parent = child.transform;
-					newSlot.transform.localScale = Vector3.one * 0.1f;
 
 					//LOSOWANIE KART DLA ARMII
 					for(int i = 0; i < baseCardNo; i++)
 					{
 						GameObject newCard = cards[Random.Range (0, cards.Count)];
-						newSlot.GetComponent<Army>().cardList.Add (newCard);
+						child.GetChild (0).GetComponent<Army>().cardList.Add (newCard);
 					}
 
-					Sprite newSprite = newSlot.GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
-					newSlot.AddComponent<SpriteRenderer>().sprite = newSprite;
+					Sprite newSprite = child.GetChild (0).GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
+					child.GetChild (0).GetComponent<SpriteRenderer>().sprite = newSprite;
 				}
 			}
 		}
