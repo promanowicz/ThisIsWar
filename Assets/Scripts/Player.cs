@@ -13,20 +13,15 @@ public class Player : MonoBehaviour {
 	public Text pointsText;
 
 
-	public void CreateArmyCounter (Tile tile)
+	public void AddTile (Tile tile)
 	{
-		//TWORZENIE NOWEGO SLOTU DLA ARMII
-		GameObject newSlot = new GameObject ("Army Slot");
-		newSlot.AddComponent<Army> ();
-		newSlot.transform.position = tile.transform.position;
-		newSlot.transform.parent = tile.transform;
-		newSlot.transform.localScale = Vector3.one * 0.1f;
-
-		Army newArmy = newSlot.GetComponent<Army> ();
-		newArmy.owner = this;
-		newArmy.dislocation = tile;
-		army.Add (newSlot);
-
+		foreach(Transform slot in tile.transform)
+		{
+			Army newArmy = slot.GetComponent<Army> ();
+			newArmy.owner = this;
+			newArmy.dislocation = tile;
+			army.Add (slot.gameObject);
+		}
 		int points = int.Parse (pointsText.text);
 		pointsText.text = (++points).ToString ();
 	}
