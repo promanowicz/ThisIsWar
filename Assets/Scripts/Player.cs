@@ -11,7 +11,26 @@ public class Player : MonoBehaviour {
     public List<GameObject> strategyCards;
     public List<GameObject> cardsReceived; //karty otrzymywane na począktu rundy
 	public Text pointsText;
+	public Text powerText;
 
+	//ODŚWIERZANIE SPRITE'ÓW SLOTÓW I POTĘGI GRACZA
+	public void RefreshSlots ()
+	{
+		int power = 0;
+
+		foreach(GameObject a in army)
+		{
+			if(a.GetComponent<Army>().cardList.Count > 0)
+			{
+				Sprite newSprite = a.GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
+				a.gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+			}
+
+			power+=a.GetComponent<Army>().cardList.Count;
+		}
+
+		powerText.text = power.ToString ();
+	}
 
 	public void AddTile (Tile tile)
 	{

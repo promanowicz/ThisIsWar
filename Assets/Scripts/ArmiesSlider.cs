@@ -41,6 +41,12 @@ public class ArmiesSlider : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         textObj.text = napis + numerArmii;
+
+		if(Input.GetKeyDown ("return"))
+		{
+			GameManager.instance.NextPlayer ();
+			Timer.instance.ResetTimer ();
+		}
 	}
 
    public void GetPlayerArmies()

@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
 	public Transform playerMarker; //znacznik pokazujący, który gracz aktualnie wykonuje ruch
 	public int currPlayerID = 0; //ID aktywnego gracza
 	public int turn;
+	public Text turnText;
 	public Text phaseText;
 	//public Button nextTurnButton;
     //public int roundNumber;
@@ -64,6 +65,15 @@ public class GameManager : MonoBehaviour {
 	{
 		Timer.instance.ResetTimer ();
 
+		//ZAMYKANIE OKNA REINFORCEMENTU
+		if(reinforcementIsOpen)
+		{
+			players[currPlayerID].RefreshSlots ();
+			reinforcementIsOpen = false;
+			XmlLoader.instance.ReturnCards ();
+			Destroy (reinforcementScreen);
+		}
+
 		currPlayerID++;
 		currPlayerID %= players.Count;
 		playerMarker.position = playerBars [currPlayerID].position;
@@ -72,18 +82,22 @@ public class GameManager : MonoBehaviour {
 		if(gamePhase == Phase.SETUP && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
-			turn++;
+			//turn++;
+			turnText.text = turn.ToString ();
 			//TWORZENIE ARMII DLA TERYTORIÓW NIEZALEŻNYCH
 			SetupArmies (XmlLoader.instance.allWarCards);
 		}
 
 		else if(gamePhase == Phase.REINFORCE && currPlayerID == 0)
+		{
 			gamePhase = Phase.MOVE;
+		}
 
 		else if(gamePhase == Phase.MOVE && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
 			turn++;
+			turnText.text = turn.ToString ();
 		}
 
 		if(gamePhase != Phase.SETUP)
@@ -92,14 +106,9 @@ public class GameManager : MonoBehaviour {
 			//players[currPlayerID].CreateFogOfWar ();
 		}
 
+		//OTWIERANIE OKNA REINFORCEMENTU
 		if(gamePhase == Phase.REINFORCE)
 		{
-			if(reinforcementIsOpen)
-			{
-				reinforcementIsOpen = false;
-				Destroy (reinforcementScreen);
-			}
-
 			reinforcementScreen = (GameObject)Instantiate (reinforcementPrefab);
 			ArmiesSlider armiesSlider = reinforcementScreen.transform.GetChild (3).GetComponent<ArmiesSlider>();
 			armiesSlider.player = players[currPlayerID].gameObject;

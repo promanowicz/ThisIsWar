@@ -226,4 +226,15 @@ public class XmlLoader : MonoBehaviour {
         else
         return int.Parse(tmp);
     }
+
+	//DO USUWANIA KART Z EKRANU
+	public void ReturnCards ()
+	{
+		float offset = 0;
+		foreach (Transform card in transform)
+		{
+			card.localPosition = new Vector3(offset, 0, 0);
+			offset+=3.1f;
+		}
+	}
 }
