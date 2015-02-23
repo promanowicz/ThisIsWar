@@ -13,8 +13,9 @@ public enum Phase
 
 public class GameManager : MonoBehaviour {
 
-	public NetworkManager netManager;
+	//public NetworkManager netManager;
 
+	public GameObject reinforcementPrefab;
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
 	public List<Player> players; //lista graczy
@@ -22,9 +23,11 @@ public class GameManager : MonoBehaviour {
 	public Transform playerMarker; //znacznik pokazujący, który gracz aktualnie wykonuje ruch
 	public int currPlayerID = 0; //ID aktywnego gracza
 	public int turn;
+	public Text turnText;
 	public Text phaseText;
 	//public Button nextTurnButton;
-    public int roundNumber;
+    //public int roundNumber;
+	public int baseCardNo = 5;
 
     public List<CardWar> allWarCards { get; set; }
     public List<CardWar> allStrategyCards { get; set; }
@@ -33,6 +36,9 @@ public class GameManager : MonoBehaviour {
         get;
         private set;
     }
+
+	private bool reinforcementIsOpen = false;
+	private GameObject reinforcementScreen;
 
     void Awake()
     {
@@ -45,7 +51,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-        roundNumber = 0;
+        //roundNumber = 0;
 
 	}
 	
@@ -57,6 +63,17 @@ public class GameManager : MonoBehaviour {
 
 	public void NextPlayer () //Przekazanie tury następnemu graczowi
 	{
+		Timer.instance.ResetTimer ();
+
+		//ZAMYKANIE OKNA REINFORCEMENTU
+		if(reinforcementIsOpen)
+		{
+			players[currPlayerID].RefreshSlots ();
+			reinforcementIsOpen = false;
+			XmlLoader.instance.ReturnCards ();
+			Destroy (reinforcementScreen);
+		}
+
 		currPlayerID++;
 		currPlayerID %= players.Count;
 		playerMarker.position = playerBars [currPlayerID].position;
@@ -65,16 +82,22 @@ public class GameManager : MonoBehaviour {
 		if(gamePhase == Phase.SETUP && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
-			//nextTurnButton.gameObject.SetActive (true);
+			//turn++;
+			turnText.text = turn.ToString ();
+			//TWORZENIE ARMII DLA TERYTORIÓW NIEZALEŻNYCH
+			SetupArmies (XmlLoader.instance.allWarCards);
 		}
 
 		else if(gamePhase == Phase.REINFORCE && currPlayerID == 0)
+		{
 			gamePhase = Phase.MOVE;
+		}
 
 		else if(gamePhase == Phase.MOVE && currPlayerID == 0)
 		{
 			gamePhase = Phase.REINFORCE;
 			turn++;
+			turnText.text = turn.ToString ();
 		}
 
 		if(gamePhase != Phase.SETUP)
@@ -82,10 +105,44 @@ public class GameManager : MonoBehaviour {
 			phaseText.text = gamePhase.ToString ();
 			//players[currPlayerID].CreateFogOfWar ();
 		}
+
+		//OTWIERANIE OKNA REINFORCEMENTU
+		if(gamePhase == Phase.REINFORCE)
+		{
+			reinforcementScreen = (GameObject)Instantiate (reinforcementPrefab);
+			ArmiesSlider armiesSlider = reinforcementScreen.transform.GetChild (3).GetComponent<ArmiesSlider>();
+			armiesSlider.player = players[currPlayerID].gameObject;
+			armiesSlider.GetPlayerArmies ();
+			reinforcementIsOpen = true;
+		}
 	}
 
-	public bool IfPlayerTurn()
+	/*public bool IfPlayerTurn()
 	{
 			return currPlayerID == netManager.GetPlayerID();
+	}*/
+
+	//TWORZENIE ARMII DLA TERYTORIÓW NIEZALEŻNYCH
+	void SetupArmies (List<GameObject> cards)
+	{
+		foreach(Transform child in map)
+		{
+			if(child.name == "tile")
+			{
+				if(child.GetComponent<Tile>().owner == null)
+				{
+
+					//LOSOWANIE KART DLA ARMII
+					for(int i = 0; i < baseCardNo; i++)
+					{
+						GameObject newCard = cards[Random.Range (0, cards.Count)];
+						child.GetChild (0).GetComponent<Army>().cardList.Add (newCard);
+					}
+
+					Sprite newSprite = child.GetChild (0).GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
+					child.GetChild (0).GetComponent<SpriteRenderer>().sprite = newSprite;
+				}
+			}
+		}
 	}
 }

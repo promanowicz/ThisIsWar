@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
 	
 	public Transform map;
+	public Text buttonText;
 
 	private bool isPerspective = false;
 	private bool isMoving = false;
@@ -20,9 +22,7 @@ public class CameraController : MonoBehaviour {
 	{
 		if(Input.GetKeyDown (KeyCode.LeftShift))
 		{
-			isMoving = true;
-			if(!isPerspective)
-				Camera.main.orthographic = false;
+			CamChange ();
 		}
 
 		if(isMoving)
@@ -53,6 +53,18 @@ public class CameraController : MonoBehaviour {
 					transform.position = new Vector3(transform.position.x, 1.5f,  transform.position.z);
 			}
 		}
+	}
+
+	public void CamChange ()
+	{
+		isMoving = true;
+		if(!isPerspective)
+		{
+			buttonText.text = "ORTO";
+			Camera.main.orthographic = false;
+		}
+		else
+			buttonText.text = "PERSP";
 	}
 
 	void Move ()

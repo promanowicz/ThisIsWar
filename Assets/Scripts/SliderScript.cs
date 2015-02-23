@@ -21,7 +21,7 @@ public class SliderScript : MonoBehaviour {
     {
         
             if (cardsInSlider != null)
-                foreach (GameObject x in cardsInSlider) x.transform.position = Vector3.zero;
+                foreach (GameObject x in cardsInSlider) x.transform.localPosition = Vector3.zero;
             cardsInSlider = value;
             CheckCountInList();
             ResetLayout();

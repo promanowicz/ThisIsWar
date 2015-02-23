@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Tile : MonoBehaviour {
 
 	public List<Tile> neighbours;
+	public GameObject slotPrefab;
 	public GameManager gameManager;
 	public Player owner;
 	public Color tileColor;
@@ -25,14 +26,14 @@ public class Tile : MonoBehaviour {
 
 	void OnMouseDown ()
 	{
-		if(gameManager.IfPlayerTurn() && !owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
+		if(/*gameManager.IfPlayerTurn() && */!owner && CheckNeighbours () && gameManager.gamePhase == Phase.SETUP && production)
 		{
 			owner = gameManager.players[gameManager.currPlayerID];
 			tileColor = owner.playerColor;
 			tileColor = new Color(tileColor.r, tileColor.g, tileColor.b, 0.25f);
 			GetComponent<SpriteRenderer>().color = tileColor;
-			owner.CreateArmyCounter (this, 0);
-			networkView.RPC("UpdateTile", RPCMode.Others);
+			owner.AddTile (this);
+			//networkView.RPC("UpdateTile", RPCMode.Others);
 			gameManager.NextPlayer ();
 		}
 	}
@@ -53,7 +54,7 @@ public class Tile : MonoBehaviour {
 		//TWORZENIE SLOTÓW ARMII
 		for(int i = 0; i < 3; i++)
 		{
-			GameObject slot = new GameObject("Army Slot "+(i+1));
+			GameObject slot = (GameObject)Instantiate (slotPrefab);
 			slot.transform.parent = transform;
 		}
 		//pozycja slotu 1.

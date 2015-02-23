@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,20 +10,39 @@ public class Player : MonoBehaviour {
     public List<GameObject> army = new List<GameObject>();
     public List<GameObject> strategyCards;
     public List<GameObject> cardsReceived; //karty otrzymywane na począktu rundy
+	public Text pointsText;
+	public Text powerText;
 
-
-	public void CreateArmyCounter (Tile tile, int slot)
+	//ODŚWIERZANIE SPRITE'ÓW SLOTÓW I POTĘGI GRACZA
+	public void RefreshSlots ()
 	{
-		GameObject counter = (GameObject)Network.Instantiate (counterPrefab, tile.transform.GetChild (slot).position, Quaternion.Euler(90,0,0), 0);
-		counter.transform.position = tile.transform.position;
-		counter.transform.parent = transform;
-		counter.renderer.material.color = playerColor;
+		int power = 0;
 
+		foreach(GameObject a in army)
+		{
+			if(a.GetComponent<Army>().cardList.Count > 0)
+			{
+				Sprite newSprite = a.GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
+				a.gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+			}
 
-		Army newArmy = counter.GetComponent<Army> ();
-		newArmy.owner = this;
-		newArmy.dislocation = tile;
-		army.Add (counter);
+			power+=a.GetComponent<Army>().cardList.Count;
+		}
+
+		powerText.text = power.ToString ();
+	}
+
+	public void AddTile (Tile tile)
+	{
+		foreach(Transform slot in tile.transform)
+		{
+			Army newArmy = slot.GetComponent<Army> ();
+			newArmy.owner = this;
+			newArmy.dislocation = tile;
+			army.Add (slot.gameObject);
+		}
+		int points = int.Parse (pointsText.text);
+		pointsText.text = (++points).ToString ();
 	}
 
 	public void CreateFogOfWar ()

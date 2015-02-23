@@ -10,7 +10,13 @@ public class CardDragAndDrop : MonoBehaviour {
     {
         if (clicked)
         {
-            Vector3 x = Camera.main.ScreenToWorldPoint(Input.mousePosition); ;
+			Camera currentCam;
+            //Vector3 x = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			if(Application.loadedLevelName == "map")
+				currentCam = GameObject.Find ("ArmiesSetCamera").GetComponent<Camera>();
+			else
+				currentCam = Camera.main;
+			Vector3 x = currentCam.ScreenToWorldPoint(Input.mousePosition);
             x.z = transform.position.z;
             transform.position = x;
         }
