@@ -15,6 +15,7 @@ public class Tile : MonoBehaviour {
 
     public CardType restriction;
     public List<Army> armiesInRegion;
+    //public List<GameObject> armiesInRegion;
 
 	void OnMouseEnter ()
 	{
@@ -79,6 +80,15 @@ public class Tile : MonoBehaviour {
 		}
 		return true;
 	}
+
+    public List<Army> GetArmies()
+    {
+        return armiesInRegion;
+        //List<Army> lista = new List<Army>();
+        //foreach (GameObject tmp in armiesInRegion) lista.Add(tmp.GetComponent<Army>());
+        //return lista;
+    }
+
 
     [RPC]  void UpdateTile()
 	{
