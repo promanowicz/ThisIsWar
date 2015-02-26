@@ -16,7 +16,7 @@ public class Tile : MonoBehaviour {
     public CardType restriction;
     public List<Army> armiesInRegion;
     //public List<GameObject> armiesInRegion;
-
+    public bool StartIsOff = false;
 	void OnMouseEnter ()
 	{
 		if(!GetComponent<SpriteRenderer> ().enabled)
@@ -49,6 +49,10 @@ public class Tile : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+        //start is off do testów
+        if (StartIsOff)
+        { 
+
 		GetComponent<SpriteRenderer>().enabled = false;
 
 		//TWORZENIE SLOTÓW ARMII
@@ -63,6 +67,7 @@ public class Tile : MonoBehaviour {
 		transform.GetChild (1).localPosition = new Vector3 (-0.3f, 0, -0.01f);
 		//pozycja slotu 3.
 		transform.GetChild (2).localPosition = new Vector3 (0.3f, 0, -0.01f);
+        }
 	}
 	
 	// Update is called once per frame

@@ -74,6 +74,16 @@ public class Battle : MonoBehaviour
         }
     }
 
+    public void Surrender()
+    {
+        surrender = true;
+    }
+
+    public void Pause()
+    {
+        pause = true;
+    }
+
     void Start()
     {
         //testowanie
@@ -97,7 +107,7 @@ public class Battle : MonoBehaviour
 
         Debug.Log("Porównuje karty: " + attackerCard.cardName + " z " + defenderCard.cardName);
         //czy karty mogą ze sobą walczyć?
-        if (defenderCard.fightsAgainst.Contains(attackerCard.type) || attackerCard.fightsAgainst.Contains(defenderCard.type))
+        if (defenderCard.fightsAgainst.Contains(attackerCard.type) && attackerCard.fightsAgainst.Contains(defenderCard.type))
         {
             
             //czy karty leżące na wierzchu talii dają wsparcie. 0 - brak wsparcia, 1 - daje atakującemu, 2 daje broniącemu, 3 - dają obie
@@ -250,6 +260,10 @@ public class Battle : MonoBehaviour
                     yield return new WaitForSeconds(0.1f);
                 }
 
+                //odstawienie kart na bok
+                
+
+
                 //Po porównaniu karty są wrzucane do kart zremisowanych dlatego że jeśli jest remis to i tak tam trafią
                 //a jeśli wygra któraś ze stron to karty zremisowane strony wygranej wracają do talii z talią zremisowaną wraca tam także karta
                 //która ostatnio walczyła
@@ -276,13 +290,13 @@ public class Battle : MonoBehaviour
                     //karty napastnika wracają do talii
                     for (int t = 0; t < attackerDrawCards.Count; t++)
                     {
-                        attackerArmies[currentAttackerArmyFighting].cardList.Add(attackerDrawCards[0].transform.parent.gameObject);
+                        attackerArmies[currentAttackerArmyFighting].cardList.Add(attackerDrawCards[0].transform.gameObject);
                         attackerDrawCards.RemoveAt(0);
                     }
                     //karty obrońcy wracają do "krupiera" 
                     for (int t = 0; t < defenderDrawCards.Count; t++)
                     {
-                        XmlLoader.instance.allWarCards.Add(defenderDrawCards[0].transform.parent.gameObject);
+                        XmlLoader.instance.allWarCards.Add(defenderDrawCards[0].transform.gameObject);
                         defenderDrawCards.RemoveAt(0);
                     }
                 }
@@ -319,7 +333,12 @@ public class Battle : MonoBehaviour
                 //gdyby skonczyly sie atakujacemu karty w danej armii przejdź do kolejnej armii
                 if(attackerArmies[currentAttackerArmyFighting].cardList.Count==0)
                 {
-                    if (attackerArmies.Count < currentAttackerArmyFighting + 1) currentAttackerArmyFighting += 1;
+                    Debug.Log("Tu powinno być przejście do drugiej armmii" + attackerArmies.Count +" " + currentAttackerArmyFighting);
+                    if (attackerArmies.Count > currentAttackerArmyFighting +1) 
+                    { 
+                        currentAttackerArmyFighting += 1;
+                        Debug.Log("Było przejście do drugiej armii");
+                    }
                     else
                     {
                         Debug.Log("Atakujący nie ma więcej kart");
@@ -362,6 +381,8 @@ public class Battle : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
 
+    //Funkcje ustawiające karty w celu poprawnego działania powinny być używane wyłącznie w funkcji porównujacej armmie, w bitwie
+    //odstawienie kart do wsparcia
     void SetSupportCards()
     {
         Vector3 nextPositionA = new Vector3(playerAsupportPos.position.x, playerAsupportPos.position.y, playerAsupportPos.position.z);
@@ -379,5 +400,10 @@ public class Battle : MonoBehaviour
             nextPositionB.z += 1.5f;
         }
     }
-
+    //odstawienie kart zeby nie przesłaniały walczących kart
+    void SetCardsBack(int i)
+    {
+        attackerArmies[currentAttackerArmyFighting].cardList[0].transform.position = XmlLoader.instance.transform.position;
+        armiesInRegion[i].cardList[0].transform.position = XmlLoader.instance.transform.position;
+    }
 }

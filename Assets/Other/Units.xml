@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Units.xsd" generated="2015-02-21T17:27:39">
-<Arkusz1>
+<dane>
 <type>bomber</type>
 <name>Tu-95</name>
 <png>B1</png>
@@ -16,8 +16,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bombowiec dalekiego u</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Tu-95</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>CASA C-295</name>
 <png>B10</png>
@@ -31,8 +31,8 @@
 <vsbomber>1</vsbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot transportowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>CASA C-295</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>B-2 Spirit</name>
 <png>B11</png>
@@ -48,8 +48,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bombowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Northrop B-2 Spirit</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>P8 Poseidon</name>
 <png>B12</png>
@@ -66,8 +66,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot wczesnego ostrzegania</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Boeing P-8 Poseidon</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>Kawasaki P-1</name>
 <png>B13</png>
@@ -84,8 +84,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot wczesnego ostrzegania</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Kawasaki P-1</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>Tu-60</name>
 <png>B2</png>
@@ -101,8 +101,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bombowiec strategiczny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Tu-60</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>B-1B Lancer</name>
 <png>B3</png>
@@ -118,8 +118,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bombowiec strategiczny dalekiego u</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>B-1B Lancer</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>F-117 Nighthawk</name>
 <png>B4</png>
@@ -135,8 +135,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bombowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>F-117 Nighthawk</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>SR-71 Blackbird</name>
 <png>B5</png>
@@ -151,8 +151,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot rozpoznawczo-patrolowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>SR-71 Blackbird</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>Boeing E-3 Sentry</name>
 <png>B6</png>
@@ -167,8 +167,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot wczesnego ostrzegania</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Boeing E-3 Sentry</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>E-767 (AWACS)</name>
 <png>B7</png>
@@ -183,8 +183,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniczy System Ostrzegania i Kontroli</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Boeing E-767 (AWACS)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>A-50 Szmiel</name>
 <png>B8</png>
@@ -199,8 +199,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniczy System Ostrzegania i Kontroli</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Berijew A-50 Szmiel</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>bomber</type>
 <name>F-111 Aardvark</name>
 <png>B9</png>
@@ -214,8 +214,8 @@
 <vsbomber>1</vsbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bombowiec strategiczny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>F-111 Aardvark</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Chengdu J-10</name>
 <png>F1</png>
@@ -231,8 +231,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Chengdu J-10</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>LTV A-7 Corsair II</name>
 <png>F10</png>
@@ -247,8 +247,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Szturmowiec pokładowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>LTV A-7 Corsair II</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Panavia Tornado</name>
 <png>F11</png>
@@ -264,8 +264,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot myśliwsko-bombowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Panavia Tornado</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Su-27</name>
 <png>F12</png>
@@ -282,8 +282,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec przewagi powietrznej</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Su-27</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Su-33</name>
 <png>F13</png>
@@ -300,8 +300,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec przewagi powietrznej</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Su-33</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Su-37</name>
 <png>F14</png>
@@ -317,8 +317,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>  Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Su-37</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Su-47 Berkut </name>
 <png>F15</png>
@@ -334,8 +334,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Su-47 Berkut </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Saab JAS 39 Gripen</name>
 <png>F16</png>
@@ -351,8 +351,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Saab JAS 39 Gripen</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-CK-1 Ching-Kuo</name>
 <png>F17</png>
@@ -368,8 +368,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>AIDC F-CK-1 Ching-Kuo</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-35 Lightning II</name>
 <png>F18</png>
@@ -385,8 +385,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>F-35 Lightning II</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>AMX International</name>
 <png>F19</png>
@@ -401,8 +401,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lekki samolot szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>AMX International AMX</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Dassault Mirage 5</name>
 <png>F2</png>
@@ -418,8 +418,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot myśliwsko-bombowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Dassault Mirage 5</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-18 Super Hornet</name>
 <png>F20</png>
@@ -435,8 +435,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name> F-18 Super Hornet</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>MiG-29 Fulcrum-F</name>
 <png>F21</png>
@@ -452,8 +452,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec frontowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>MiG-29 Fulcrum-F</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>MiG-35 </name>
 <png>F22</png>
@@ -469,8 +469,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec frontowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>MiG-35 </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Su-17</name>
 <png>F23</png>
@@ -485,8 +485,8 @@
 <vsbomber>1</vsbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot myśiwsko-bombowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Su-17</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>PZL I-22 Iryda</name>
 <png>F24</png>
@@ -500,8 +500,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot szkolno-treningowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>PZL I-22 Iryda</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>314 Super Tucano</name>
 <png>F25</png>
@@ -516,8 +516,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>EMB 314 Super Tucano</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-5E/F Tiger II</name>
 <png>F26</png>
@@ -532,8 +532,8 @@
 <vsbomber>1</vsbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lekki myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>F-5E/F Tiger II</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>HESA Azarakhsh</name>
 <png>F27</png>
@@ -548,8 +548,8 @@
 <vsbomber>1</vsbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>HESA Azarakhsh</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>HAL Tejas</name>
 <png>F28</png>
@@ -565,8 +565,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>HAL Tejas</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>HESA Saeqeh</name>
 <png>F29</png>
@@ -582,8 +582,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>HESA Saeqeh</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Dassault Rafale</name>
 <png>F3</png>
@@ -599,8 +599,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Dassault Rafale</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>PAK Suchoj T-50</name>
 <png>F30</png>
@@ -617,8 +617,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec przewagi powietrznej</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>PAK FA (Suchoj T-50)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Shenyang J-31</name>
 <png>F31</png>
@@ -634,8 +634,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Shenyang J-31</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-22 Raptor</name>
 <png>F32</png>
@@ -651,8 +651,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lockheed F-22 Raptor</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>T-50 Golden Eagle</name>
 <png>F33</png>
@@ -666,8 +666,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot szkolno-treningowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>KAI T-50 Golden Eagle</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>Eurofighter Tajfun</name>
 <png>F4</png>
@@ -683,8 +683,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Eurofighter Typhoon</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>A-10 Thunderbolt</name>
 <png>F5</png>
@@ -699,8 +699,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Szturmowiec bliskiego wsparcia</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>A-10 Thunderbolt II</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-16 Falcon</name>
 <png>F6</png>
@@ -716,8 +716,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>F-16 Fighting Falcon</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-15 Eagle</name>
 <png>F7</png>
@@ -734,8 +734,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec przewagi powietrznej</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>McDonnell Douglas F-15 Eagle</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>A-6 Intruder</name>
 <png>F8</png>
@@ -750,8 +750,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Grumman A-6 Intruder</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>fighter</type>
 <name>F-14 Tomcat</name>
 <png>F9</png>
@@ -767,8 +767,8 @@
 <supportbomber>1</supportbomber>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Myśliwiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Grumman F-14 Tomcat</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>RAH-66 Comanche</name>
 <png>H16</png>
@@ -783,8 +783,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowo- rozpoznawczy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>RAH-66 Comanche</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>AS565 Panther</name>
 <png>H17</png>
@@ -799,8 +799,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Eurocopter AS565 Panther</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>V-22 Osprey</name>
 <png>H18</png>
@@ -815,8 +815,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samolot wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Bell-Boeing V-22 Osprey</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Changhe WZ-10</name>
 <png>H19</png>
@@ -831,8 +831,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Wuzhuang Zhisheng-10</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>CH-47 Chinook</name>
 <png>H20</png>
@@ -847,8 +847,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec transportowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>CH-47 Chinook</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>NHI NH90</name>
 <png>H21</png>
@@ -864,8 +864,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec wielozadaniowy </Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>NHI NH90</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>SA 341/342 Gazelle</name>
 <png>H1</png>
@@ -880,8 +880,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lekki śmigłowiec wielozadaniowy </Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Aérospatiale Gazelle</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Agusta Mangusta</name>
 <png>H10</png>
@@ -896,8 +896,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Agusta A129 Mangusta</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Eurocopter Tiger</name>
 <png>H11</png>
@@ -912,8 +912,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Eurocopter Tiger</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Mi-28</name>
 <png>H12</png>
@@ -928,8 +928,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Mi-28</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Mi-35M</name>
 <png>H13</png>
@@ -944,8 +944,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Mi-35M</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Ka-50</name>
 <png>H14</png>
@@ -961,8 +961,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy/przeciwpancerny </Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Ka-50</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Denel Rooivalk</name>
 <png>H15</png>
@@ -977,8 +977,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Denel Rooivalk</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Aérospatiale Puma</name>
 <png>H2</png>
@@ -993,8 +993,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Średni śmigłowiec transportowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Aérospatiale Puma</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Bell AH-1 Cobra</name>
 <png>H3</png>
@@ -1009,8 +1009,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Bell AH-1 Cobra</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>AH-64 Apache</name>
 <png>H4</png>
@@ -1025,8 +1025,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec szturmowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>AH-64 Apache</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Black Hawk</name>
 <png>H5</png>
@@ -1041,8 +1041,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>UH-60A Black Hawk</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>PZL W-3 Sokół</name>
 <png>H6</png>
@@ -1057,8 +1057,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Śmigłowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>PZL W-3 Sokół</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>MQ-1 Predator</name>
 <png>H7</png>
@@ -1073,8 +1073,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bezzałogowy Bojowy Aparat Latający</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>MQ-1 Predator</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>RQ-4 Global Hawk</name>
 <png>H8</png>
@@ -1090,8 +1090,8 @@
 <radar>1</radar>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bezzałogowy Aparat Latający</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>RQ-4 Global Hawk</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>helicopter</type>
 <name>Mi-24</name>
 <png>H9</png>
@@ -1106,8 +1106,8 @@
 <vsfighter>1</vsfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Ciężki śmigłowiec bojowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Mi-24</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>F 122 Bremen</name>
 <png>N1</png>
@@ -1121,8 +1121,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregata rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu 122 (Bremen)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>adm. Kuźniecow</name>
 <png>N10</png>
@@ -1137,8 +1137,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniskowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Admirał Kuźniecow</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Horizon</name>
 <png>N11</png>
@@ -1154,8 +1154,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel obrony powietrznej</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel  typu Horizon</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Charles de Gaulle</name>
 <png>N12</png>
@@ -1169,8 +1169,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniskowiec </Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Charles de Gaulle</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Cavour</name>
 <png>N13</png>
@@ -1185,8 +1185,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniskowiec </Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Cavour</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Juan Carlos I</name>
 <png>N14</png>
@@ -1202,8 +1202,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręt wielozadaniowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt typu Juan Carlos I</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>130 Braunschweig</name>
 <png>N15</png>
@@ -1217,8 +1217,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Korweta rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Korweta typu 130 Braunschweig</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>123 Brandenburg</name>
 <png>N16</png>
@@ -1232,8 +1232,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregaty rakietowa typu 123</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu 123 Brandenburg</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Vikramaditya</name>
 <png>N17</png>
@@ -1248,8 +1248,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniskowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Kijów (Vikramaditya)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Invincible</name>
 <png>N18</png>
@@ -1264,8 +1264,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lekki lotniskowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Invincible</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>R11</name>
 <png>N19</png>
@@ -1280,8 +1280,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lekki lotniskowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Príncipe de Asturias </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>23 Duke</name>
 <png>N2</png>
@@ -1295,8 +1295,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregata rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu 23 (Duke)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>1144 Kirow (Orłan)</name>
 <png>N20</png>
@@ -1310,8 +1310,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Krążownik rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Krążowniki typu 1144 Kirow (Orłan)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>1164 Atlant (Slava)</name>
 <png>N21</png>
@@ -1326,8 +1326,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Krążownik rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Krążownik typu 1164 Atlant (Slava)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>052B Luyang I</name>
 <png>N22</png>
@@ -1342,8 +1342,8 @@
 <supportsubmarine>1</supportsubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel typu 052B Luyang I</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Haruna</name>
 <png>N23</png>
@@ -1357,8 +1357,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel typu Haruna</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>de La Penne</name>
 <png>N24</png>
@@ -1373,8 +1373,8 @@
 <supportsubmarine>1</supportsubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel typu Durand de La Penne</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>45 Daring</name>
 <png>N25</png>
@@ -1389,8 +1389,8 @@
 <supportsubmarine>1</supportsubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel typu 45 (Daring)</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Great Sejong</name>
 <png>N26</png>
@@ -1405,8 +1405,8 @@
 <supportsubmarine>1</supportsubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel typu Great Sejong</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Ticonderoga</name>
 <png>N27</png>
@@ -1421,8 +1421,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Krążownik</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Krążownik typu Ticonderoga</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Almirante Padilla</name>
 <png>N3</png>
@@ -1436,8 +1436,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregata rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu Almirante Padilla</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>O. Hazard Perry</name>
 <png>N4</png>
@@ -1451,8 +1451,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregata rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu Oliver Hazard Perry</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Karel Doorman</name>
 <png>N5</png>
@@ -1466,8 +1466,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregata rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu Karel Doorman</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Arleigh Burke</name>
 <png>N6</png>
@@ -1482,8 +1482,8 @@
 <supportsubmarine>1</supportsubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszczyciel typu Arleigh Burke</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Atago-Kongo</name>
 <png>N7</png>
@@ -1498,8 +1498,8 @@
 <supportsubmarine>1</supportsubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Niszczyciel rakietowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Niszyczciel typu Atago-Kongo</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Álvaro de Bazán</name>
 <png>N8</png>
@@ -1513,8 +1513,8 @@
 <vssubmarine>1</vssubmarine>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Fregata rakietowa</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Fregata typu Álvaro de Bazán</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>naval</type>
 <name>Nimitz </name>
 <png>N9</png>
@@ -1528,8 +1528,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Lotniskowiec</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Lotniskowiec typu Nimitz </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Akula</name>
 <png>S1</png>
@@ -1543,8 +1543,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Akula</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Virginia</name>
 <png>S2</png>
@@ -1558,8 +1558,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Virginia</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Sea Wolf</name>
 <png>S3</png>
@@ -1573,8 +1573,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Sea Wolf</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Han</name>
 <png>S4</png>
@@ -1588,8 +1588,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Han</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Trafalgar</name>
 <png>S5</png>
@@ -1603,8 +1603,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Trafalgar</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Todaro</name>
 <png>S6</png>
@@ -1619,8 +1619,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Todaro</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Sierra</name>
 <png>S7</png>
@@ -1634,8 +1634,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Sierra</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>submarine</type>
 <name>Borej</name>
 <png>S8</png>
@@ -1649,8 +1649,8 @@
 <supportnaval>1</supportnaval>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Okręty Podwodny</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Okręt podwodny typu Borej</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>M142 HIMARS</name>
 <png>T19</png>
@@ -1665,8 +1665,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżna wyrzutnia rakiet</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>M142 HIMARS</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>FGM-148 Javelin</name>
 <png>T20</png>
@@ -1681,8 +1681,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Przeciwpancerny pocisk kierowany</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>FGM-148 Javelin</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>PZA Loara </name>
 <png>T21</png>
@@ -1698,8 +1698,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżna artyleria  przeciwlotnicza </Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>PZA Loara </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>WR-40 Langusta</name>
 <png>T22</png>
@@ -1714,8 +1714,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_> Samobieżna wyrzutnia rakiet</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>WR-40 Langusta</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>BTR-90</name>
 <png>T23</png>
@@ -1729,8 +1729,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_> Transporter opancerzony</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>BTR-90</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Mowag Piranha</name>
 <png>T24</png>
@@ -1744,8 +1744,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_> Transporter opancerzony</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Mowag Piranha</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>SPz Puma</name>
 <png>T25</png>
@@ -1759,8 +1759,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bojowy wóz piechoty</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Schützenpanzer Puma</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Stridsfordon 90 </name>
 <png>T26</png>
@@ -1774,8 +1774,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Ciężki bojowy wóz piechoty</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Stridsfordon 90 </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Czarny Orzeł </name>
 <png>T27</png>
@@ -1789,8 +1789,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Czarny Orzeł </long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>PzH 2000</name>
 <png>T28</png>
@@ -1805,8 +1805,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżna haubicoarmata</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Panzerhaubitze 2000</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>K9 Thunder</name>
 <png>T29</png>
@@ -1821,8 +1821,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Działo samobieżne</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>K9 Thunder</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>PLZ-05</name>
 <png>T30</png>
@@ -1837,8 +1837,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Działo samobieżne</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>PLZ-05</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>AHS Krab</name>
 <png>T31</png>
@@ -1853,8 +1853,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżna armatohaubica</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>AHS Krab</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>T-155 Fırtına</name>
 <png>T32</png>
@@ -1869,8 +1869,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżna armatohaubica</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>T-155 Fırtına</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>GCT 155mm</name>
 <png>T33</png>
@@ -1885,8 +1885,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżna armatohaubica</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>GCT 155mm</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>wz. 1977 Dana</name>
 <png>T34</png>
@@ -1901,8 +1901,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_> Samobieżna wyrzutnia rakiet</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Armatohaubica &quot;Dana&quot;</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Al-Khalid</name>
 <png>T35</png>
@@ -1916,8 +1916,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Al-Khalid</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Altay</name>
 <png>T36</png>
@@ -1931,8 +1931,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Altay</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>M113</name>
 <png>T37</png>
@@ -1946,8 +1946,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Transport opancerzony</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>M113</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Gepard 1A2</name>
 <png>T38</png>
@@ -1963,8 +1963,8 @@
 <supportfighter>1</supportfighter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Samobieżne działo przeciwlotnicze</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Flakpanzer Gepard</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Arjun</name>
 <png>T1</png>
@@ -1978,8 +1978,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Arjun</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>T 90</name>
 <png>T10</png>
@@ -1993,8 +1993,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>T 90</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>T-84M Opłot</name>
 <png>T11</png>
@@ -2008,8 +2008,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>T-84M Opłot</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>PT-91 Twardy</name>
 <png>T12</png>
@@ -2023,8 +2023,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>PT-91 Twardy</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>ZTZ-99</name>
 <png>T13</png>
@@ -2038,8 +2038,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>ZTZ-99</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>M2 Bradley</name>
 <png>T14</png>
@@ -2053,8 +2053,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Bojowy wóz piechoty</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>M2 Bradley</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Stryker</name>
 <png>T15</png>
@@ -2068,8 +2068,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Transporter piechoty</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Stryker</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Rosomak</name>
 <png>T16</png>
@@ -2083,8 +2083,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Kołowy Transporter opancerzony</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Rosomak</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>BvS10 Viking</name>
 <png>T17</png>
@@ -2098,8 +2098,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>  Transporter opancerzony</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>BvS10 Viking</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Artyrelia Archer</name>
 <png>T18</png>
@@ -2114,8 +2114,8 @@
 <supporttank>1</supporttank>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Działo samobieżne</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Artyrelia Archer</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Chieftain</name>
 <png>T2</png>
@@ -2129,8 +2129,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Chieftain</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Leopard 2</name>
 <png>T3</png>
@@ -2144,8 +2144,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Leopard 2</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>K2 Black Panther</name>
 <png>T4</png>
@@ -2159,8 +2159,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>K2 Black Panther</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>M1 Abrams</name>
 <png>T5</png>
@@ -2174,8 +2174,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>M1 Abrams</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Challenger 2</name>
 <png>T6</png>
@@ -2189,8 +2189,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Challenger 2</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>Merkawa</name>
 <png>T7</png>
@@ -2204,8 +2204,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>Merkawa</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>TK X</name>
 <png>T8</png>
@@ -2219,8 +2219,8 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>TK X</long_x0020_name>
-</Arkusz1>
-<Arkusz1>
+</dane>
+<dane>
 <type>tank</type>
 <name>AMX-56 Leclerc</name>
 <png>T9</png>
@@ -2234,5 +2234,5 @@
 <vshelicoter>1</vshelicoter>
 <Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>Czołg podstawowy</Unit_x0020_type_x0020__x0028_not_x0020_used_x0029_>
 <long_x0020_name>AMX-56 Leclerc</long_x0020_name>
-</Arkusz1>
+</dane>
 </dataroot>

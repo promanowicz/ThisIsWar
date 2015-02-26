@@ -18,14 +18,12 @@ public class SliderScript : MonoBehaviour {
     public TextMesh cardNumberTM;
 
     public void SetCards(List<GameObject> value)
-    {
-        
+    {   
             if (cardsInSlider != null)
                 foreach (GameObject x in cardsInSlider) x.transform.localPosition = Vector3.zero;
             cardsInSlider = value;
             CheckCountInList();
             ResetLayout();
-       
     }
     
     void Start()
@@ -61,7 +59,6 @@ public class SliderScript : MonoBehaviour {
 
     }
 
-
     void CheckCountInList()
     {
         if (cardsInSlider.Count == 0) mid = -2;
@@ -78,6 +75,7 @@ public class SliderScript : MonoBehaviour {
             nextMid = 2;
         }
     }
+
     void LoadCards(List<GameObject> karty)
     {
 
@@ -91,7 +89,7 @@ public class SliderScript : MonoBehaviour {
         MoveLeft();
     }
         
-   public void ResetLayout()
+    public void ResetLayout()
     {
         if (isCardNumberShown) cardNumberTM.text = "NR: " + (mid+1).ToString();
 
@@ -132,9 +130,7 @@ public class SliderScript : MonoBehaviour {
        // Debug.Log(cardsInSlider[mid].name);
     }
 
-
-
-   public void MoveRight()
+    public void MoveRight()
     {
         
         if (mid != -1 && mid != -2)
@@ -147,7 +143,7 @@ public class SliderScript : MonoBehaviour {
         Debug.Log(cardsInSlider.Count + " prewMID " + prevMid);
     }
 
-  public  void MoveLeft()
+    public  void MoveLeft()
     {
         if (mid != -1 && mid != -2)
         {
@@ -157,6 +153,11 @@ public class SliderScript : MonoBehaviour {
             if (prevMid < 0) prevMid = cardsInSlider.Count - 1;
         }
         ResetLayout();
+    }
+
+    public void ColliderEnableChange(bool var)
+    {
+        gameObject.GetComponent<CircleCollider2D>().enabled = var;
     }
 
 }
