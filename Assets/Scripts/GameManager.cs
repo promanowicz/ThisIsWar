@@ -141,6 +141,8 @@ public class GameManager : MonoBehaviour {
 
 					Sprite newSprite = child.GetChild (0).GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
 					child.GetChild (0).GetComponent<SpriteRenderer>().sprite = newSprite;
+
+					child.GetChild (0).GetComponent<SlotScript>().CreateCollider ();
 				}
 			}
 		}

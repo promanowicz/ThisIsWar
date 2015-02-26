@@ -24,6 +24,8 @@ public class Player : MonoBehaviour {
 			{
 				Sprite newSprite = a.GetComponent<Army>().cardList[0].GetComponent<SpriteRenderer>().sprite;
 				a.gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+				if(!a.GetComponent<CircleCollider2D>())
+					a.GetComponent<SlotScript>().CreateCollider ();
 			}
 
 			power+=a.GetComponent<Army>().cardList.Count;

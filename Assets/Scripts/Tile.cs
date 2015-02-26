@@ -58,11 +58,11 @@ public class Tile : MonoBehaviour {
 			slot.transform.parent = transform;
 		}
 		//pozycja slotu 1.
-		transform.GetChild (0).localPosition = new Vector3 (0, 0.3f, 0);
+		transform.GetChild (0).localPosition = new Vector3 (0, 0.3f, -0.01f);
 		//pozycja slotu 2.
-		transform.GetChild (1).localPosition = new Vector3 (-0.3f, 0, 0);
+		transform.GetChild (1).localPosition = new Vector3 (-0.3f, 0, -0.01f);
 		//pozycja slotu 3.
-		transform.GetChild (2).localPosition = new Vector3 (0.3f, 0, 0);
+		transform.GetChild (2).localPosition = new Vector3 (0.3f, 0, -0.01f);
 	}
 	
 	// Update is called once per frame
