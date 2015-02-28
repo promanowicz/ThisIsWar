@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 	//public NetworkManager netManager;
 
 	public GameObject reinforcementPrefab;
+	public Camera detailCam;
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
 	public List<Player> players; //lista graczy

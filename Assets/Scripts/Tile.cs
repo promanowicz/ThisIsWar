@@ -36,6 +36,7 @@ public class Tile : MonoBehaviour {
 			//networkView.RPC("UpdateTile", RPCMode.Others);
 			gameManager.NextPlayer ();
 		}
+
 	}
 
 	void OnMouseExit ()
