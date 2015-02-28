@@ -25,6 +25,11 @@ public class ArmiesSlider : MonoBehaviour {
   
 	// Use this for initialization
 	void Start () {
+        //zmiana ktora powinna usunąć 1 zbędną armię
+        //zmiana 26.02 po konfie
+        GetPlayerArmies();
+        InArmySlider.ColliderEnableChange(false);
+
 
         //do testowania wczytywanie armii z objectow
         //playerArmies = new List<Army>();
@@ -53,15 +58,19 @@ public class ArmiesSlider : MonoBehaviour {
     {    
         Player temp = player.GetComponent<Player>();
         foreach (GameObject x in temp.army) playerArmies.Add(x.GetComponent<Army>());
+
+       //zmiana 26.02 po konfie
+        ShowArmyCards();
     }
 
     void ShowArmyCards()
     {
-        if (playerArmies.Count <= 0) numerArmii = "brak armii";
+        if (playerArmies.Count <= 0 || playerArmies==null) numerArmii = "brak armii";
         else
         {
             numerArmii = currentArmy.ToString();
             InArmySlider.SetCards(playerArmies[currentArmy].cardList);
+            InArmySlider.ColliderEnableChange(true);
         }
     }
 
