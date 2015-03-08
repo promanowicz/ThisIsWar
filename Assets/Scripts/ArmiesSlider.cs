@@ -28,7 +28,7 @@ public class ArmiesSlider : MonoBehaviour {
         //zmiana ktora powinna usunąć 1 zbędną armię
         //zmiana 26.02 po konfie
         GetPlayerArmies();
-        InArmySlider.ColliderEnableChange(false);
+        //InArmySlider.ColliderEnableChange(false);
 
 
         //do testowania wczytywanie armii z objectow
@@ -70,7 +70,7 @@ public class ArmiesSlider : MonoBehaviour {
         {
             numerArmii = currentArmy.ToString();
             InArmySlider.SetCards(playerArmies[currentArmy].cardList);
-            InArmySlider.ColliderEnableChange(true);
+            //InArmySlider.ColliderEnableChange(true);
         }
     }
 

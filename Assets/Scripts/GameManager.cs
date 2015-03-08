@@ -113,7 +113,6 @@ public class GameManager : MonoBehaviour {
 			reinforcementScreen = (GameObject)Instantiate (reinforcementPrefab);
 			ArmiesSlider armiesSlider = reinforcementScreen.transform.GetChild (3).GetComponent<ArmiesSlider>();
 			armiesSlider.player = players[currPlayerID].gameObject;
-			armiesSlider.GetPlayerArmies ();
 			reinforcementIsOpen = true;
 		}
 	}
