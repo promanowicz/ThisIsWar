@@ -40,6 +40,7 @@ public class SlotScript : MonoBehaviour
 		{
 			MoveArmy ();
 
+
 			if(Input.GetMouseButtonUp (0))
 			{
 				transform.position = new Vector3(transform.position.x, transform.position.y, -0.01f);
@@ -63,9 +64,15 @@ public class SlotScript : MonoBehaviour
 	void MoveArmy ()
 	{
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		float depth = transform.position.z - Camera.main.transform.position.z;
 
-		transform.position = ray.GetPoint (depth);
+		RaycastHit hit;
+		if(Physics.Raycast (ray, out hit))
+		{
+			if(hit.collider.gameObject.name == "map")
+			{
+				transform.position = hit.point - new Vector3(0,0,0.1f);
+			}
+		}
 	}
 
 	//Aktualizacja pozycji szczegułowego widoku slotu
