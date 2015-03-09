@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Battle : MonoBehaviour
 {
-    //do testowania
-    public Army army1;
-    public Army army2;
-    public Army army3;
-    public byte[] testWynik;
+    ////do testowania
+    //public Army army1;
+    //public Army army2;
+    //public Army army3;
+    //public byte[] testWynik;
 
     //zmienne do obsługi bitwy
 
@@ -21,6 +21,7 @@ public class Battle : MonoBehaviour
     public Text regionText; //nazwa regionu
     public Text roleText;   //rola gracz (atakujący/broniący)
     public Text battleStage;    //etap bitwy + inne info tekstw dole ekarny
+    public GameObject drawCardChoiceosition;
     public float fightTime = 1.0f; // czas wykonywania sekwencji w bitwie
     public Vector3 setBackPos = new Vector3(20, 0, 0);
     public bool surrender = false;
@@ -30,7 +31,7 @@ public class Battle : MonoBehaviour
     bool isAnimRuning = false;
     GameObject[] armiesTmp = new GameObject[6];//zmienna przechowująca kopie pierwszych kart z armii, 
     //do wykorzystania jako obraz armii w lewym(lub prawym) pasku
-   // FightResultWrapper result1 = new FightResultWrapper(FightResult.DRAW);   //zmienna na wynik bitwy
+    // FightResultWrapper result1 = new FightResultWrapper(FightResult.DRAW);   //zmienna na wynik bitwy
 
     //ustawianie kart atakującego, analogiczne dla gracza A i B
     public Transform[] playerAarmiesPos;    //ustawienie kart wskazujących armie ze zmiennej armies tmp
@@ -59,25 +60,26 @@ public class Battle : MonoBehaviour
         for (i = 0; i < 3; i++)
         {
             //ustawienie armii broniących i atakujących
-            if (i<armiesInRegion.Count)
+            if (i < armiesInRegion.Count)
             {
                 armiesTmp[i] = (GameObject)Instantiate(armiesInRegion[i].cardList[0]);  //instancjonowanie "emblematu armii"
-                armiesTmp[i].GetComponent<CircleCollider2D>().enabled = false;  
+                armiesTmp[i].GetComponent<CircleCollider2D>().enabled = false;
                 armiesTmp[i].transform.localScale = new Vector3(0.5f, 0.5f, 1f);
                 armiesTmp[i].transform.position = playerBarmiesPos[i].position;     //ustawienie na pozycji obiektu podanego w inspektorze
             }
             //WARNING powtórzony kod
             if (i < attackerArmies.Count)
             {
-                armiesTmp[i + 3] = (GameObject)Instantiate(attackerArmies[i].cardList[0]); 
+                armiesTmp[i + 3] = (GameObject)Instantiate(attackerArmies[i].cardList[0]);
                 armiesTmp[i + 3].GetComponent<CircleCollider2D>().enabled = false;
-                armiesTmp[i+3].transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+                armiesTmp[i + 3].transform.localScale = new Vector3(0.5f, 0.5f, 1f);
                 armiesTmp[i + 3].transform.position = playerAarmiesPos[i].position;
             }
         }
     }
 
-    void BulletHolesDisable(){
+    void BulletHolesDisable()
+    {
         for (int i = 0; i < 5; i++)
         {
             playerAbulletHoles[i].SetActive(false);
@@ -110,15 +112,16 @@ public class Battle : MonoBehaviour
 
     void Start()
     {
-        //testowanie
-        army1.cardList = XmlLoader.instance.GetWarCards();
-        army2.cardList = XmlLoader.instance.GetWarCards();
-        army3.cardList = XmlLoader.instance.GetWarCards();
+        ////testowanie
+        //army1.cardList = XmlLoader.instance.GetWarCards();
+        //army2.cardList = XmlLoader.instance.GetWarCards();
+        //army3.cardList = XmlLoader.instance.GetWarCards();
+
+
+        //kroki do uruchomienia bitwy
         armiesInRegion = attackedRegion.GetArmies();
         attackerArmies = _attacker.GetArmies();
         SetArmiesInPositions();
-
-       // testWynik = CompareCards(attackerArmies[0].cardList[0].GetComponent<CardWar>(),armiesInRegion[0].cardList[0].GetComponent<CardWar>());
         StartCoroutine(BattleFight());
 
     }
@@ -126,7 +129,7 @@ public class Battle : MonoBehaviour
     //Funkcja porównuje dwie karty i zwraca tablicę przebiegu bitwy przekazywaną następnie do ComparationAnimation
     byte[] CompareCards(CardWar attackerCard, CardWar defenderCard)
     {
-        byte[] result = new byte[7]{0,0,0,0,0,0,0}; //pozycje w tablicy to kolejne wyniki porównań statystych zaczynając od wsparcia.
+        byte[] result = new byte[7] { 0, 0, 0, 0, 0, 0, 0 }; //pozycje w tablicy to kolejne wyniki porównań statystych zaczynając od wsparcia.
         byte attLittlePoints = 0;
         byte defLittlePoints = 0;
 
@@ -134,9 +137,9 @@ public class Battle : MonoBehaviour
         //czy karty mogą ze sobą walczyć?
         if (defenderCard.fightsAgainst.Contains(attackerCard.type) && attackerCard.fightsAgainst.Contains(defenderCard.type))
         {
-            
+
             //czy karty leżące na wierzchu talii dają wsparcie. 0 - brak wsparcia, 1 - daje atakującemu, 2 daje broniącemu, 3 - dają obie
-            if (attackerDrawCards.Count>0 && attackerDrawCards[0].supportAgainst.Contains(defenderCard.type))
+            if (attackerDrawCards.Count > 0 && attackerDrawCards[0].supportAgainst.Contains(defenderCard.type))
             {
                 result[0] += 1;
                 attLittlePoints += 1;
@@ -228,14 +231,14 @@ public class Battle : MonoBehaviour
                 if (tab[i] == 1)
                 {
                     playerBparticle1.Play();
-                    if(i>0)
-                    BulletHolesEnable(i-1, "B");
+                    if (i > 0)
+                        BulletHolesEnable(i - 1, "B");
                 }
                 if (tab[i] == 2)
                 {
                     playerAparticle1.Play();
                     if (i > 0)
-                    BulletHolesEnable(i - 1, "A");
+                        BulletHolesEnable(i - 1, "A");
                 }
                 if (tab[i] > 2)
                 {
@@ -261,12 +264,13 @@ public class Battle : MonoBehaviour
         // odsuwać karty po porównaniu
 
         float zOffset = 1;
-        byte[] comparationResult =new byte[7];
+        byte[] comparationResult = new byte[7];
         currentAttackerArmyFighting = 0;
         currentDefenderArmyFighting = 0;
         FightResult finalResult = FightResult.DRAW;
         int i = 0;
         int tmp = 0;
+        int trophy = 0;
 
         for (i = 0; i < armiesInRegion.Count; i++)
         {
@@ -277,8 +281,8 @@ public class Battle : MonoBehaviour
             while (armiesInRegion[i].cardList.Count > 0 && attackerArmies[currentAttackerArmyFighting].cardList.Count > 0)
             {
                 //ustawienie kart na pozycjach 
-                armiesInRegion[i].cardList[0].transform.position = new Vector3(playerBcardPos.position.x, playerBcardPos.position.y, playerBcardPos.position.z-zOffset);
-                attackerArmies[currentAttackerArmyFighting].cardList[0].transform.position = new Vector3(playerAcardPos.position.x, playerAcardPos.position.y, playerAcardPos.position.z-zOffset); ;
+                armiesInRegion[i].cardList[0].transform.position = new Vector3(playerBcardPos.position.x, playerBcardPos.position.y, playerBcardPos.position.z - zOffset);
+                attackerArmies[currentAttackerArmyFighting].cardList[0].transform.position = new Vector3(playerAcardPos.position.x, playerAcardPos.position.y, playerAcardPos.position.z - zOffset); ;
                 //zOffset += 0.5f;
 
                 //porówananie i animacja
@@ -312,7 +316,7 @@ public class Battle : MonoBehaviour
                     battleStage.text = "Równe karty!";
                     yield return new WaitForSeconds(1f);
                 }
-               //jeżeli wygrał napastnik
+                //jeżeli wygrał napastnik
                 else if (comparationResult[6] == 1)
                 {
                     Debug.Log("Wynik porownania to zwycięstwo atakującego");
@@ -324,27 +328,29 @@ public class Battle : MonoBehaviour
                         attackerArmies[currentAttackerArmyFighting].cardList.Add(attackerDrawCards[0].transform.gameObject);
                         attackerDrawCards.RemoveAt(0);
                     }
-                    //karty obrońcy wracają do "krupiera" 
+                    //karty obrońcy wracają do "krupiera" + łupy
                     tmp = defenderDrawCards.Count;
+                    trophy = tmp / 3;
                     for (int t = 0; t < tmp; t++)
                     {
                         defenderDrawCards[0].transform.position = setBackPos;
-                        XmlLoader.instance.allWarCards.Add(defenderDrawCards[0].transform.gameObject);
-                        defenderDrawCards.RemoveAt(0);
+                        if (t < trophy)
+                        {
+                            attackerArmies[currentAttackerArmyFighting].cardList.Add(defenderDrawCards[0].transform.gameObject);
+                            defenderDrawCards.RemoveAt(0);
+                        }
+                        else
+                        {
+                            XmlLoader.instance.allWarCards.Add(defenderDrawCards[0].transform.gameObject);
+                            defenderDrawCards.RemoveAt(0);
+                        }
                     }
                 }
                 //Jeśli wygrał obrońca
                 else if (comparationResult[6] == 2)
                 {
                     Debug.Log("Wynik porownania to zwycięstwo obrońcy");
-                    //karty napastnika wracają do krupiera
-                    tmp = attackerDrawCards.Count;
-                    for (int t = 0; t < tmp; t++)
-                    {
-                        attackerDrawCards[0].transform.position = setBackPos;
-                        XmlLoader.instance.allWarCards.Add(attackerDrawCards[0].transform.gameObject);
-                        attackerDrawCards.RemoveAt(0);
-                    }
+
                     //karty obrońcy wracają  do jego talii
                     tmp = defenderDrawCards.Count;
                     for (int t = 0; t < tmp; t++)
@@ -352,6 +358,25 @@ public class Battle : MonoBehaviour
                         defenderDrawCards[0].transform.position = setBackPos;
                         armiesInRegion[i].cardList.Add(defenderDrawCards[0].transform.gameObject);
                         defenderDrawCards.RemoveAt(0);
+                    }
+
+                    //karty napastnika wracają do krupiera + łupy dla wygranego
+                    tmp = attackerDrawCards.Count;
+                    trophy = tmp / 3;
+                    if (trophy > 0) attackerDrawCards.Sort(CardWar.CompareCardWar);
+                    for (int t = 0; t < tmp; t++)
+                    {
+                        attackerDrawCards[0].transform.position = setBackPos;
+                        if (t < trophy)
+                        {
+                            armiesInRegion[i].cardList.Add(attackerDrawCards[0].transform.gameObject);
+                            attackerDrawCards.RemoveAt(0);
+                        }
+                        else
+                        {
+                            XmlLoader.instance.allWarCards.Add(attackerDrawCards[0].transform.gameObject);
+                            attackerDrawCards.RemoveAt(0);
+                        }
                     }
                 }
 
@@ -372,11 +397,11 @@ public class Battle : MonoBehaviour
 
 
                 //gdyby skonczyly sie atakujacemu karty w danej armii przejdź do kolejnej armii
-                if(attackerArmies[currentAttackerArmyFighting].cardList.Count==0)
+                if (attackerArmies[currentAttackerArmyFighting].cardList.Count == 0)
                 {
-                    Debug.Log("Tu powinno być przejście do drugiej armmii" + attackerArmies.Count +" " + currentAttackerArmyFighting);
-                    if (attackerArmies.Count > currentAttackerArmyFighting +1) 
-                    { 
+                    Debug.Log("Tu powinno być przejście do drugiej armmii" + attackerArmies.Count + " " + currentAttackerArmyFighting);
+                    if (attackerArmies.Count > currentAttackerArmyFighting + 1)
+                    {
                         currentAttackerArmyFighting += 1;
                         Debug.Log("Było przejście do drugiej armii");
                     }
@@ -407,17 +432,17 @@ public class Battle : MonoBehaviour
         {
             finalResult = FightResult.WIN;
             Debug.Log("wygrales " + roleText.text);
-           battleStage.text = "Wygrana atakującego!";
-           
+            battleStage.text = "Wygrana atakującego!";
+
         }
         else if (attackerArmies[currentAttackerArmyFighting].cardList.Count < armiesInRegion[i].cardList.Count)
         {
             finalResult = FightResult.LOSE;
             battleStage.text = "Wygrana obrońcy!";
         }
-        else 
-        { 
-            finalResult = FightResult.LOSE;
+        else
+        {
+            finalResult = FightResult.DRAW;
             battleStage.text = "Remis";
         }
 

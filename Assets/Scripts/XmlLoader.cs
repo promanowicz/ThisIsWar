@@ -13,7 +13,7 @@ public class XmlLoader : MonoBehaviour {
     public List<GameObject> allWarCards = new List<GameObject>();
     public Sprite[] vehicleImages;
     public Sprite defaultSprite;
-
+    public int shuffleNumber = 150;
     float transOffset = 0;
     void Awake()
     {
@@ -173,6 +173,7 @@ public class XmlLoader : MonoBehaviour {
 
         }
 
+        ShuffleCards();
         Debug.Log("Wczytano " + allWarCards.Count + " kart wojennych");
     }
 
@@ -192,6 +193,7 @@ public class XmlLoader : MonoBehaviour {
         vehicleImages = Resources.LoadAll<Sprite>(path);
         Debug.Log("Zakonczylem wczytywac spritey");
     }
+
     List<CardType> ParseStringToCardType(string tmp)
     {
         string[] tmpTab;
@@ -219,6 +221,18 @@ public class XmlLoader : MonoBehaviour {
         return lst;
     }
 
+    public void ShuffleCards()
+    {
+        GameObject tmp;
+        int pos = 0;
+        for (int i = 0; i < shuffleNumber; i++)
+        {
+            pos = Random.Range(0, allWarCards.Count - 1);
+            tmp = allWarCards[0];
+            allWarCards.RemoveAt(0);
+            allWarCards.Insert(pos, tmp);
+        }
+    }
     int ParseStringToInt(string tmp)
     {
         if (tmp.Equals(""))
