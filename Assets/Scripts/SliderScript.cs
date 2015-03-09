@@ -94,7 +94,7 @@ public class SliderScript : MonoBehaviour {
         if (isCardNumberShown) cardNumberTM.text = "NR: " + (mid+1).ToString();
 
        // CheckCountInList();
-        if (mid == -2) ; else
+      //  if (mid == -2) ; else
         if (mid == -1)
         {
             cardsInSlider[0].GetComponent<CircleCollider2D>().enabled = true;
