@@ -10,11 +10,13 @@ public class CameraController : MonoBehaviour {
 	private bool isPerspective = false;
 	private bool isMoving = false;
 	private Vector3 startPosition;
+	private Vector3 currentPosition;
+	private Vector3 lastPosition;
 
 	// Use this for initialization
 	void Start () 
 	{
-		startPosition = transform.position;
+		startPosition = currentPosition = lastPosition = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -30,7 +32,9 @@ public class CameraController : MonoBehaviour {
 		else
 		{
 			//RUCH KAMERY
+			lastPosition = transform.position;
 			transform.position += new Vector3 (Input.GetAxis ("Mouse X") * 3  * Time.deltaTime, Input.GetAxis ("Mouse Y") * 3 * Time.deltaTime, 0);
+			currentPosition = transform.position;
 
 			//OGRANICZENIA
 			if(transform.position.x<-6)
@@ -92,5 +96,10 @@ public class CameraController : MonoBehaviour {
 				transform.position = startPosition;
 			}
 		}
+	}
+
+	public Vector3 GetPositionDelta ()
+	{
+		return currentPosition - lastPosition;
 	}
 }

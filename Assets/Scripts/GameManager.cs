@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 	//public NetworkManager netManager;
 
 	public GameObject reinforcementPrefab;
+	public Camera detailCam;
 	public Transform map;
 	public Phase gamePhase = Phase.SETUP;
 	public List<Player> players; //lista graczy
@@ -112,7 +113,6 @@ public class GameManager : MonoBehaviour {
 			reinforcementScreen = (GameObject)Instantiate (reinforcementPrefab);
 			ArmiesSlider armiesSlider = reinforcementScreen.transform.GetChild (3).GetComponent<ArmiesSlider>();
 			armiesSlider.player = players[currPlayerID].gameObject;
-			armiesSlider.GetPlayerArmies ();
 			reinforcementIsOpen = true;
 		}
 	}
